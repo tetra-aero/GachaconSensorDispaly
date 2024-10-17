@@ -15,7 +15,16 @@
   - 0x40: FET2 switch (ON:1, OFF:0)
 - Response: TBD
 
-### 0x1400, Output PWM
+### 0x1300, ESC-UART, Voltage
+- CAN ID, 0x1300 - 0x130D
+  - 0x1300: Serial number of GachaconECU No.0
+  - 0x1301: Serial number of GachaconECU No.1
+  - ......
+  - 0x130D: Serial number of GachaconECU No.13
+- Data, Ranage: 0x0000 - 0x01770 (0 - 0600)
+  - Battery Voltage, 00.0 - 60.0 [V]
+
+### 0x1400, Output PWM (PWM0 control)
 - CAN ID, 0x1400 - 0x140D (PWM No.1)
   - 0x1400: PWM No.1, Serial number of GachaconECU No.0
   - 0x1401: PWM No.1, Serial number of GachaconECU No.1
@@ -25,7 +34,7 @@
   - requested output motor PWM, 900 - 2000 [usec]
 - Response: TBD
 
-### 0x1500
+### 0x1500, PWM1 control
 - Retired, GachaconECU only
 
 ### 0x1600, Relay Controller
@@ -39,7 +48,7 @@
   - 0x40: Relay2 switch (ON:1, OFF:0)
 - Response: TBD
 
-### 0x1700
+### 0x1700, Photo coupler Controller
 - Retired, GachaconECU only
 
 ### 0x1800, Select PWM Controller
@@ -56,7 +65,7 @@
   - Other value -> 0x80
 - Response: TBD
 
-### 0x1900
+### 0x1900 ESC information control
 - TBD
 
 ## 2. ESC-UART, information Voltage (Battery Voltage, Throttle, Act throttle, Bus current, Phase current)
@@ -67,8 +76,8 @@
   - 0x1301: Serial number of GachaconECU No.1
   - ......
   - 0x130D: Serial number of GachaconECU No.13
-- Data, Ranage: 0x0000 - 0x01770 (0 - 0600)
-  - Battery Voltage, 00.0 - 60.0 [V]
+- Data, Ranage: 0x0000 - 0x02710 (0 - 10000)
+  - Battery Voltage, 0.0 - 1000.0 [V], 0.1 [V] step
 
 ### 0x2000, ESC-UART, Throttle
 - CAN ID, 0x2000 - 0x200D
@@ -94,8 +103,8 @@
   - 0x2201: Serial number of GachaconECU No.1
   - ......
   - 0x220D: Serial number of GachaconECU No.13
-- Data, Ranage:
-  - Bus current
+- Data, Range: 0x7FF551A0 - 0x800AAE60 (-700000 - 700000)
+  - Current, -700.000 - 700.000 [A], 0.001 [A] step (=1mA)
 
 ### 0x2300, ESC-UART, Phase current
 - CAN ID, 0x2300 - 0x230D
@@ -106,7 +115,36 @@
 - Data, Ranage:
   - Phase current
 
+### 0x2400, ask Voltage, ~DC85V
+- Retired, GachaconECU only
 
+### 0x2500, Voltage module re-start, ~DC85V
+- Retired, GachaconECU only
+
+### 0x2600, ask Voltage, ~DC1000V
+- 0x2600 - 0x260D
+  - 0x2600: Serial number of GachaconECU No.0
+  - 0x2601: Serial number of GachaconECU No.1
+  - ......
+  - 0x260D: Serial number of GachaconECU No.13
+- Data, Range: 0x00 or 0x01
+
+### 0x2700, Voltage module re-start, ~DC1000V
+- 0x2700 - 0x270D
+  - 0x2700: Serial number of GachaconECU No.0
+  - 0x2701: Serial number of GachaconECU No.1
+  - ......
+  - 0x270D: Serial number of GachaconECU No.13
+- Data, Range: 0x00 or 0x01
+
+### 0x2800, ask Current, ~700A
+- 0x2800 - 0x280D
+  - 0x2800: Serial number of GachaconECU No.0
+  - 0x2801: Serial number of GachaconECU No.1
+  - ......
+  - 0x280D: Serial number of GachaconECU No.13
+- Data, Range: 0x7FF551A0 - 0x800AAE60 (-700000 - 700000)
+  - Current, -700.000 - 700.000 [A], 0.001 [A] step (=1mA)
 
 ## 3. TBD
 
@@ -124,13 +162,13 @@
 
 ### 0x4400/0x4500, Each Cell Voltage
 
-### 0x4600
+### 0x4600, STATUS MAIN IV
 - Retired, for using ENNOID BMS
 
-### 0x4700
+### 0x4700, STATUS CELL VOLTAGE
 - Retired, for using ENNOID BMS
 
-### 0x4800
+### 0x4800, STATUS THROTTLE and CH DIScharge BOOL (ON/OFF)
 - Retired, for using ENNOID BMS
 
 
