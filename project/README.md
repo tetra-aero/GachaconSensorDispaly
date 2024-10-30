@@ -17,3 +17,15 @@ sudo pip install dronecan  --break-system-packages
 https://dronecan.github.io/GUI_Tool/Overview/
 
  pip install pyuavcan --break-system-packages
+
+
+# Linuxセットアップ時のインストールコマンド
+sudo apt install python-is-python3
+suto apt install python3-pip
+suto apt install git
+sudo apt update && sudo apt install -y bridge-utils
+sudo apt install can-utils
+
+pip install --break-system-packages python-can
+
+sudo mkdir -p /mnt/ramdisk
