@@ -11,7 +11,7 @@ CNT = 0
 with open('config.json', 'r') as f:
     config = json.load(f)
 
-can = can.interface.Bus(channel=config['can_json']['can_channel'], interface='socketcan')
+can = can.interface.Bus(channel="can0", interface='socketcan')
 previous_time = datetime.now()
 
 
@@ -45,7 +45,7 @@ while 1:
                     data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
                     object_data = {}
                     object_data["title"] = "Battery Voltage No." + str(i+1)
-                    object_data["data"] = round( (data/10) ,0)
+                    object_data["data"] = round( (data/10.0) ,1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
                     print(object_data)

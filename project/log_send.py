@@ -3,7 +3,7 @@ import random
 import time
 from datetime import datetime, timedelta
 import re
-can1 = can.interface.Bus(channel='can0', interface='socketcan')
+can1 = can.interface.Bus(channel='can1', interface='socketcan')
 
 # 正規表現を使ってタイムスタンプ、インターフェース、CAN ID、データフィールドに分解
 #path = "../ESC_CAN_Log/candump-2024-10-11_160637.log"
