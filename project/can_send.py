@@ -3,7 +3,7 @@ import random
 import time
 from datetime import datetime, timedelta
 
-can1 = can.interface.Bus(channel='can1', interface='socketcan')
+can1 = can.interface.Bus(channel='can0', interface='socketcan')
 previous_time = datetime.now()
 CNT = 0
 while True:

@@ -42,10 +42,10 @@ while 1:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x1300 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x1300 + i):04X}")].split()
-                    data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
+                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
                     object_data["title"] = "Battery Voltage No." + str(i+1)
-                    object_data["data"] = round( (data/10.0) ,1)
+                    object_data["data"] = round( (data/10.0) ,2)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
                     print(object_data)
@@ -54,10 +54,10 @@ while 1:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
-                    data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
+                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
                     object_data["title"] = "Throttle No." + str(i+1)
-                    object_data["data"] = round( ((data/1024.0)*100.0) , 2)
+                    object_data["data"] = round(  (data/10.0) , 2)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " RPM"
                     print(object_data)
@@ -78,10 +78,12 @@ while 1:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2200 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2200 + i):04X}")].split()
-                    data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
+                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
+                    if data >= 0x8000:
+                        data -= 0x10000  # 2の補数を利用して負の値に変換
                     object_data = {}
                     object_data["title"] = "Bus current No." + str(i+1)
-                    object_data["data"] = round( (data/64) , 2)
+                    object_data["data"] = round( (data/10.0) , 1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " A"
                     print(object_data)
