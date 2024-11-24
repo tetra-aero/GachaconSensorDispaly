@@ -1,0 +1,21 @@
+.number.red{
+  background-color:rgb(255, 0, 0)!important;
+  border: 8px outset rgb(217, 0, 0)!important;
+  /* 文字列の色 */
+  color: white;
+}
+.number.yellow{
+  background-color:rgb(255, 255, 0)!important;
+  border: 8px outset rgb(130, 130, 0)!important;
+  color: black;
+}
+.number.blue{
+  background-color:rgb(0, 72, 255)!important;
+  border: 8px outset rgb(2, 0, 130)!important;
+  color: white;
+}
+.number.green{
+  background-color:rgb(30, 255, 0)!important;
+  border: 8px outset rgb(46, 130, 0)!important;
+  color: white;
+}

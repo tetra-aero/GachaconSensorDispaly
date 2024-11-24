@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/kitagami/Github/GachaconSensorDispaly/project/can_viwer/gachacon_driver.py", line 6, in <module>
+    import can
+ModuleNotFoundError: No module named 'can'
