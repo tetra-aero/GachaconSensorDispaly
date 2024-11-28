@@ -6,10 +6,10 @@ import re
 can1 = can.interface.Bus(channel='can0', interface='socketcan')
 
 # 正規表現を使ってタイムスタンプ、インターフェース、CAN ID、データフィールドに分解
-path = "../ESC_CAN_Log/candump-2024-10-11_160637.log"
-pattern = r"\((.*?)\)\s(\w+)\s(\w+)#(\w+)"
-#path = "../GACHACON_log/candump-2022-02-22_161128_test03-04.log"
-#pattern = r"\((\d+\.\d+)\)\s+(\S+)\s+([0-9A-F]+)#([0-9A-F]*)"
+#path = "../../ESC_CAN_Log/candump-2024-10-11_160637.log"
+#pattern = r"\((.*?)\)\s(\w+)\s(\w+)#(\w+)"
+path = "../../GACHACON_log/candump-2022-02-22_161128_test03-04.log"
+pattern = r"\((\d+\.\d+)\)\s+(\S+)\s+([0-9A-F]+)#([0-9A-F]*)"
 
 CNT = 0
 while 1:
@@ -36,7 +36,7 @@ while 1:
                     data = data,
                     is_extended_id=True)
                 can1.send(msg)
-                time.sleep(0.01)
+            time.sleep(0.1)
             #if(CNT==5):
             #    break
             CNT = CNT+1

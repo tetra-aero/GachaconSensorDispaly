@@ -35,7 +35,7 @@ mydir = os.getcwd()
 
 pycommand = [
     ['server.py'],
-    #['gachacon_driver.py'],
+    ['gachacon_driver.py'],
 ]
 
 
