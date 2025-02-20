@@ -5,14 +5,24 @@ import time
 import requests
 import can
 from datetime import datetime, timedelta
-jdata = {}
-CNT = 0
+from enum import Enum
 
+class State(Enum):
+    Stanby                  = 0
+    Supplying_Precharge     = 1
+    Supplying_Intermediate  = 2
+    Supplying               = 3
+    Flying_Precharge        = 4
+    Flying_Intermediate     = 5
+    Flying                  = 6
+    
+
+Current_state = State.Stanby
+jdata = {}
 
 #can = can.interface.Bus(channel="can0", interface='socketcan')
 can = can.interface.Bus(channel="vcan0", interface='socketcan')
 previous_time = datetime.now()
-
 
 outjson = [0 for _ in range(14*3)]
 outjson_old = [0 for _ in range(14*3)]
@@ -36,14 +46,14 @@ while 1:
     #=========================================================================#
     if current_time.second != previous_time.second:
         #print(jdata)
-        for i in range(0x0E):
+        for i in range(0x22):
             try:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x1300 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x1300 + i):04X}")].split()
                     data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
-                    object_data["title"] = "Battery Voltage No." + str(i+1)
+                    object_data["title"] = "Battery Voltage No." + str(i)
                     object_data["data"] = round( (data/10.0) ,2)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
@@ -55,7 +65,7 @@ while 1:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
                     data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
-                    object_data["title"] = "Throttle No." + str(i+1)
+                    object_data["title"] = "Throttle No." + str(i)
                     object_data["data"] = round(  (data/10.0) , 2)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " RPM"
@@ -67,7 +77,7 @@ while 1:
                 #    strdata = jdata[(f"0x{(0x2100 + i):04X}")].split()
                 #    data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
                 #    object_data = {}
-                #    object_data["title"] = "Act throttle No." + str(i+1)
+                #    object_data["title"] = "Act throttle No." + str(i)
                 #    object_data["data"] = data
                 #    object_data["raw"] = ("0x"+format(data, '04X'))
                 #    object_data["unit"] = " "
@@ -81,7 +91,7 @@ while 1:
                     if data >= 0x8000:
                         data -= 0x10000  # 2の補数を利用して負の値に変換
                     object_data = {}
-                    object_data["title"] = "Bus current No." + str(i+1)
+                    object_data["title"] = "Bus current No." + str(i)
                     object_data["data"] = round( (data/10.0) , 1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " A"
@@ -92,7 +102,7 @@ while 1:
                 #elif f"0x{(0x2300 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2300 + i):04X}")].split()
                 #    data = (int(strdata[0], 16)<<8 | int(strdata[1], 16))
-                #    object_data["title"] = "Phase current No." + str(i+1)
+                #    object_data["title"] = "Phase current No." + str(i)
                 #    object_data["data"] = data
                 #    object_data["raw"] = ("0x"+format(data, '04X'))
                 #    object_data["unit"] = " "
@@ -100,6 +110,36 @@ while 1:
                     #outjson.append(object_data)  
                 #    outjson[14*4+i] = object_data
             #--------------------------------------------------------------------------#
+                if f"0x{(0x6000 + 0x0F):04X}" in jdata:
+                    strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
+                    data = int(strdata[0], 16)
+                    if data == 0x00:
+                        Current_state = State.Stanby
+                    elif data == 0x01:
+                        Current_state = State.Supplying_Precharge
+                    elif data == 0x02:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Supplying_Intermediate
+                    elif data == 0x03:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Supplying
+                    elif data == 0x04:
+                        Current_state = State.Flying_Precharge
+                    elif data == 0x05:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Flying_Intermediate
+                    elif data == 0x06:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Flying
+                    else:
+                        # None, この状態には遷移しない
+                        Current_state = State.Stanby
+                    #pass
+                #pass                    
             except KeyError:
                 pass
             
@@ -110,7 +150,93 @@ while 1:
             jdata = {}
             previous_time = current_time
         
-        #can.send(can.Message(arbitration_id=0x200, data=[0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08], is_extended_id=False))
+        if Current_state == State.Stanby:
+            can.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001203, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001204, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001205, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001206, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001207, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001208, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001209, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120A, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120B, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120C, data=[0x00], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x0000120F, data=[0x00], is_extended_id=True))
+        elif Current_state == State.Flying_Precharge:
+            can.send(can.Message(arbitration_id=0x00001201, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001202, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001203, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001204, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001205, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001206, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001207, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001208, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001209, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120A, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120B, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x00001221, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))
+            Current_state = State.Flying_Intermediate
+        elif Current_state == State.Flying_Intermediate:
+            can.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001203, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001204, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001205, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001206, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001207, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001208, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001209, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120A, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120B, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120C, data=[0xC0], is_extended_id=True))
+ 
+            can.send(can.Message(arbitration_id=0x00001221, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0xC0], is_extended_id=True))
+            Current_state = State.Flying
+        elif Current_state == State.Flying:
+            can.send(can.Message(arbitration_id=0x00001201, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001202, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001203, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001204, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001205, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001206, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001207, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001208, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001209, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120A, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120B, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x0000120C, data=[0x40], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x0000120F, data=[0xC0], is_extended_id=True))
+        elif Current_state == State.Supplying_Precharge:
+            can.send(can.Message(arbitration_id=0x00001221, data=[0x80], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))
+            Current_state = State.Supplying_Intermediate
+        elif Current_state == State.Supplying_Intermediate:
+            can.send(can.Message(arbitration_id=0x00001221, data=[0xC0], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0xC0], is_extended_id=True))
+            Current_state = State.Supplying
+        elif Current_state == State.Supplying:
+            can.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))
+            can.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))
+
+            can.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))
+        else:
+            # None, この状態には遷移しない
+            can.send(can.Message(arbitration_id=0x000012FF, data=[0x00], is_extended_id=True))
+        #pass
     #time.sleep(0.001)
 print("")
 
