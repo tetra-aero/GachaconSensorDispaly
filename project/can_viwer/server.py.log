@@ -2,25 +2,56 @@ Bottle v0.14-dev server starting up (using WSGIRefServer())...
 Listening on http://0.0.0.0:80/
 Hit Ctrl-C to quit.
 
-Traceback (most recent call last):
-  File "/home/kitagami/Github/GachaconSensorDispaly/project/can_viwer/server.py", line 33, in <module>
-    app.run(host="0.0.0.0", port="80", debug=True)
-  File "/home/kitagami/Github/GachaconSensorDispaly/project/can_viwer/bottle.py", line 852, in run
-    run(self, **kwargs)
-  File "/home/kitagami/Github/GachaconSensorDispaly/project/can_viwer/bottle.py", line 3970, in run
-    server.run(app)
-  File "/home/kitagami/Github/GachaconSensorDispaly/project/can_viwer/bottle.py", line 3517, in run
-    self.srv = make_server(self.host, self.port, app, server_cls,
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/wsgiref/simple_server.py", line 154, in make_server
-    server = server_class((host, port), handler_class)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/socketserver.py", line 457, in __init__
-    self.server_bind()
-  File "/usr/lib/python3.12/wsgiref/simple_server.py", line 50, in server_bind
-    HTTPServer.server_bind(self)
-  File "/usr/lib/python3.12/http/server.py", line 136, in server_bind
-    socketserver.TCPServer.server_bind(self)
-  File "/usr/lib/python3.12/socketserver.py", line 473, in server_bind
-    self.socket.bind(self.server_address)
-OSError: [Errno 98] Address already in use
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET / HTTP/1.1" 200 662
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET /js/setting.js HTTP/1.1" 304 0
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET /js/chunk-vendors.js HTTP/1.1" 304 0
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET /js/app.js HTTP/1.1" 304 0
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET /css/colors.css HTTP/1.1" 304 0
+127.0.0.1 - - [20/Feb/2025 10:53:02] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:03] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:05] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:05] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:06] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:07] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:08] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:09] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:10] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:11] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:12] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:13] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:14] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:15] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:16] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:17] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:18] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:19] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:20] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:21] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:22] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:23] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:24] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:25] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:26] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:27] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:28] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:29] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:30] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:31] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:32] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:33] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:35] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:36] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:37] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:38] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:39] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:40] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:41] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:42] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:43] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:44] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:45] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:46] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:47] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:48] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:49] "GET /json HTTP/1.1" 200 126
+127.0.0.1 - - [20/Feb/2025 10:53:50] "GET /json HTTP/1.1" 200 126

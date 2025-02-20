@@ -1,0 +1,12 @@
+[Unit]
+Description=Follow-up Gachacon JSON Gateway Service
+After=startup_can_gateway.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/boot_gachacon_json_gateway.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+

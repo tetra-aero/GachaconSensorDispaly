@@ -1,0 +1,12 @@
+[Unit]
+Description=Startup CAN Gateway Script
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/boot_can_gateway.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+

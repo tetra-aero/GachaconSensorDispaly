@@ -36,7 +36,7 @@ while 1:
                     data = data,
                     is_extended_id=True)
                 can1.send(msg)
-            time.sleep(0.1)
+            time.sleep(0.01)
             #if(CNT==5):
             #    break
             CNT = CNT+1
