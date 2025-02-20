@@ -61,7 +61,7 @@ while 1:
                     object_data["unit"] = " V"
                     print(object_data)
                     #outjson.append(object_data)
-                    outjson[14*0+i] = object_data
+                    outjson[number_of_devices*0+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
@@ -73,7 +73,7 @@ while 1:
                     object_data["unit"] = " RPM"
                     print(object_data)
                     #outjson.append(object_data)  
-                    outjson[14*1+i] = object_data
+                    outjson[number_of_devices*1+i] = object_data
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2100 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2100 + i):04X}")].split()
@@ -85,7 +85,7 @@ while 1:
                 #    object_data["unit"] = " "
                 #    print(object_data)
                 #    #outjson.append(object_data)  
-                #    outjson[14*2+i] = object_data
+                #    outjson[number_of_devices*2+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2200 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2200 + i):04X}")].split()
@@ -99,7 +99,7 @@ while 1:
                     object_data["unit"] = " A"
                     print(object_data)
                     #outjson.append(object_data)  
-                    outjson[14*2+i] = object_data
+                    outjson[number_of_devices*2+i] = object_data
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2300 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2300 + i):04X}")].split()
@@ -110,7 +110,7 @@ while 1:
                 #    object_data["unit"] = " "
                 #    print(object_data)
                     #outjson.append(object_data)  
-                #    outjson[14*4+i] = object_data
+                #    outjson[number_of_devices*4+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x6000 + 0x0F):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
@@ -148,7 +148,7 @@ while 1:
         
         object_data = {}
         object_data["State"] = Current_state.name
-        outjson[14*3+1] = object_data
+        outjson[number_of_devices*3+1] = object_data
 
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson, f)
