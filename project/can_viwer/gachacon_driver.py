@@ -145,7 +145,7 @@ while 1:
             #pass
         
         object_data = {}
-        object_data["State"] = State[Current_state].name
+        object_data["State"] = Current_state.name
         outjson[14*3+1] = object_data
 
         with open('/mnt/ramdisk/output.json', 'w') as f:
