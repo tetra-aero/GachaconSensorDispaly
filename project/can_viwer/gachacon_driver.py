@@ -24,8 +24,8 @@ jdata = {}
 can_bus = can.interface.Bus(channel="vcan0", interface='socketcan')
 previous_time = datetime.now()
 
-outjson = [0 for _ in range(14*3)]
-outjson_old = [0 for _ in range(14*3)]
+outjson = [0 for _ in range(14*3+1)]
+outjson_old = [0 for _ in range(14*3+1)]
 
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
@@ -142,7 +142,12 @@ while 1:
                 #pass                    
             except KeyError:
                 pass
-            
+            #pass
+        
+        object_data = {}
+        object_data["State"] = State[Current_state].name
+        outjson[14*3+1] = object_data
+
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson, f)
             outjson_old = outjson
