@@ -148,7 +148,7 @@ while 1:
         
         object_data = {}
         object_data["State"] = Current_state.name
-        outjson[number_of_devices*3+1] = object_data
+        outjson[number_of_devices*3+0] = object_data
 
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson, f)
