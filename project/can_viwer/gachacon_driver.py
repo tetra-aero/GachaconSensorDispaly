@@ -9,7 +9,8 @@ jdata = {}
 CNT = 0
 
 
-can = can.interface.Bus(channel="can0", interface='socketcan')
+#can = can.interface.Bus(channel="can0", interface='socketcan')
+can = can.interface.Bus(channel="vcan0", interface='socketcan')
 previous_time = datetime.now()
 
 
@@ -108,6 +109,8 @@ while 1:
             #print(jdata)
             jdata = {}
             previous_time = current_time
+        
+        #can.send(can.Message(arbitration_id=0x200, data=[0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08], is_extended_id=False))
     #time.sleep(0.001)
 print("")
 

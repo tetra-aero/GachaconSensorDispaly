@@ -20,11 +20,7 @@ def run_pycommand(command):
 # CANインターフェースを設定
 commands = [
     ['sudo', 'mkdir', '-p', '/mnt/ramdisk'],
-    ['sudo', 'mount', '-t', 'tmpfs', '-o', 'size=128m', 'tmpfs', '/mnt/ramdisk'],
-    ['sudo', 'ip', 'link', 'set', 'can0', 'type', 'can', 'bitrate', '500000'],
-    ['sudo', 'ip', 'link', 'set', 'can0', 'up'],
-    ['sudo', 'ip', 'link', 'set', 'can1', 'type', 'can', 'bitrate', '500000'],
-    ['sudo', 'ip', 'link', 'set', 'can1', 'up']
+    ['sudo', 'mount', '-t', 'tmpfs', '-o', 'size=128m', 'tmpfs', '/mnt/ramdisk']
 ]
 for command in commands:
     run_command(command)
