@@ -24,8 +24,11 @@ jdata = {}
 can_bus = can.interface.Bus(channel="vcan0", interface='socketcan')
 previous_time = datetime.now()
 
-outjson = [0 for _ in range(14*3)]
-outjson_old = [0 for _ in range(14*3)]
+number_of_devices = 0x23
+number_of_element = number_of_devices*4
+
+outjson = [0 for _ in range(number_of_element)]
+outjson_old = [0 for _ in range(number_of_element)]
 
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
@@ -46,7 +49,7 @@ while 1:
     #=========================================================================#
     if current_time.second != previous_time.second:
         #print(jdata)
-        for i in range(0x22):
+        for i in range(number_of_devices):
             try:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x1300 + i):04X}" in jdata:
@@ -59,7 +62,7 @@ while 1:
                     object_data["unit"] = " V"
                     print(object_data)
                     #outjson.append(object_data)
-                    outjson[14*0+i] = object_data
+                    outjson[number_of_devices*0+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
@@ -71,7 +74,7 @@ while 1:
                     object_data["unit"] = " RPM"
                     print(object_data)
                     #outjson.append(object_data)  
-                    outjson[14*1+i] = object_data
+                    outjson[number_of_devices*1+i] = object_data
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2100 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2100 + i):04X}")].split()
@@ -83,7 +86,7 @@ while 1:
                 #    object_data["unit"] = " "
                 #    print(object_data)
                 #    #outjson.append(object_data)  
-                #    outjson[14*2+i] = object_data
+                #    outjson[number_of_devices*2+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2200 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2200 + i):04X}")].split()
@@ -97,7 +100,7 @@ while 1:
                     object_data["unit"] = " A"
                     print(object_data)
                     #outjson.append(object_data)  
-                    outjson[14*2+i] = object_data
+                    outjson[number_of_devices*2+i] = object_data
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2300 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2300 + i):04X}")].split()
@@ -108,7 +111,7 @@ while 1:
                 #    object_data["unit"] = " "
                 #    print(object_data)
                     #outjson.append(object_data)  
-                #    outjson[14*4+i] = object_data
+                #    outjson[number_of_devices*4+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x6000 + 0x0F):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
@@ -142,7 +145,12 @@ while 1:
                 #pass                    
             except KeyError:
                 pass
-            
+            #pass
+        
+        object_data = {}
+        object_data["State"] = Current_state.name
+        outjson[number_of_devices*3+0] = object_data
+
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson, f)
             outjson_old = outjson
