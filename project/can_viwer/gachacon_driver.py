@@ -25,9 +25,10 @@ can_bus = can.interface.Bus(channel="vcan0", interface='socketcan')
 previous_time = datetime.now()
 
 number_of_devices = 0x23
+number_of_element = number_of_devices*4
 
-outjson = [0 for _ in range(number_of_devices*4)]
-outjson_old = [0 for _ in range(number_of_devices*4)]
+outjson = [0 for _ in range(number_of_element)]
+outjson_old = [0 for _ in range(number_of_element)]
 
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
