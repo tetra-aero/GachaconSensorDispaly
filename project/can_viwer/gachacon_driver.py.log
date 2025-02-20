@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/tetra/Github/GachaconSensorDispaly/project/can_viwer/gachacon_driver.py", line 154, in <module>
+    can.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))
+             ^^^^^^^^^^^
+AttributeError: 'SocketcanBus' object has no attribute 'Message'
+SocketcanBus was not properly shut down
