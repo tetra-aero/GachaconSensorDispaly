@@ -74,8 +74,14 @@ void setup() {
     Serial.begin(115200);
 
     EmergencybuttonState = digitalRead(EmergencybuttonPin);     // Emergencyモードボタンの状態を取得
-    SupplyingbuttonState = digitalRead(SupplyingbuttonPin); // Suppyingモードボタンの状態を取得
-    FlyingbuttonState = digitalRead(FlyingbuttonPin);       // Flyingモードボタンの状態を取得
+    //SupplyingbuttonState = digitalRead(SupplyingbuttonPin); // Suppyingモードボタンの状態を取得
+    //FlyingbuttonState = digitalRead(FlyingbuttonPin);       // Flyingモードボタンの状態を取得
+    if (EmergencybuttonState == LOW) { // active low
+        current_state = EMERGENCY_MODE;
+    }
+    else {
+        current_state = STANDBY_MODE;
+    }
 
     // STANDYモード割り込み設定（CHANGE: ボタンが押された瞬間に割り込み発生）
     attachInterrupt(digitalPinToInterrupt(EmergencybuttonPin), EmergencybuttonISR, CHANGE);
@@ -94,8 +100,8 @@ void loop() {
     // if文の順序により、standby switch > supplying switch > flying switch の順に優先度が高い
     // チャタリング回避で、後にあるdelay(100)*2で、0.2sごとに判断する
     if (EmergencybuttonSwitched) {
-      Serial.print("\n");
-      Serial.println("SWITCHED_EMERGENCY_MODE_BUTTON");
+        Serial.print("\n");
+        //Serial.println("SWITCHED_EMERGENCY_MODE_BUTTON");
         if (EmergencybuttonState == LOW) { // active low
             Serial.println("SWITCHED_EMERGENCY_MODE"); // Pythonに通知
             current_state = EMERGENCY_MODE;
@@ -107,44 +113,52 @@ void loop() {
         EmergencybuttonSwitched = false; // フラグをリセット
     }
     else if (SupplyingbuttonSwitched) {
-      if (current_state == STANDBY_MODE) {
-          Serial.print("\n");
-          Serial.println("SWITCHED_SUPPLYING_MODE_BUTTON");
-          if (SupplyingbuttonState == LOW) { // active low
-              Serial.println("SWITCHED_SUPPLYING_MODE"); // Pythonに通知
-              current_state = SUPPLYING_MODE;
-          }
-          else {  //SupplyingbuttonState == HIGH
-              // Standby modeに戻る
-              Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
-              current_state = STANDBY_MODE;
-          }
-      }
-      else { // from SUPPLYING_MODE or FLYING_MODE or EMERGENCY_MODE
-          // 何もしない
-      }
-      SupplyingbuttonSwitched = false; // フラグをリセット
+        Serial.print("\n");
+        //Serial.println("SWITCHED_SUPPLYING_MODE_BUTTON");
+        if (SupplyingbuttonState == LOW) { // active low
+            if (current_state == STANDBY_MODE) {
+                Serial.println("SWITCHED_SUPPLYING_MODE"); // Pythonに通知
+                current_state = SUPPLYING_MODE;
+            }
+            else { // from SUPPLYING_MODE or FLYING_MODE or EMERGENCY_MODE
+              // 何もしない
+            }
+        }
+        else {  //SupplyingbuttonState == HIGH
+            if (current_state == SUPPLYING_MODE) {
+                // Standby modeに戻る
+                Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
+                current_state = STANDBY_MODE;
+            }
+            else { // from FLYING_MODE or EMERGENCY_MODE
+                // 何もしない
+            }
+        }
+        SupplyingbuttonSwitched = false; // フラグをリセット
     }
     else if (FlyingbuttonSwitched) {
-      if (current_state == STANDBY_MODE) {
-          Serial.print("\n");
-          Serial.println("SWITCHED_FLYING_MODE_BUTTON");
-          if (FlyingbuttonState == LOW) { // active low
-              Serial.print("\n");  
-              Serial.println("SWITCHED_FLYING_MODE"); // Pythonに通知
-              current_state = FLYING_MODE;
-          }
-          else {  //FlyingbuttonState == HIGH
-              // Standby modeに戻る
-              Serial.print("\n");
-              Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
-              current_state = STANDBY_MODE;
-          }
-      }
-      else { // from SUPPLYING_MODE or FLYING_MODE or EMERGENCY_MODE
-          // 何もしない
-      }
-      FlyingbuttonSwitched = false; // フラグをリセット
+        Serial.print("\n");
+        //Serial.println("SWITCHED_FLYING_MODE_BUTTON");
+        if (FlyingbuttonState == LOW) { // active low
+            if (current_state == STANDBY_MODE) {
+                Serial.println("SWITCHED_FLYING_MODE"); // Pythonに通知
+                current_state = FLYING_MODE;
+            }
+            else { // from SUPPLYING_MODE or FLYING_MODE or EMERGENCY_MODE
+                // 何もしない
+            }
+        }
+        else {  //FlyingbuttonState == HIGH
+            if (current_state == FLYING_MODE) { 
+                // Standby modeに戻る
+                Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
+                current_state = STANDBY_MODE;
+            }
+            else { // from SUPPLYING_MODE or EMERGENCY_MODE
+                // 何もしない
+            }
+        }
+        FlyingbuttonSwitched = false; // フラグをリセット
     }
     else {
         // 何もしない
