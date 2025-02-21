@@ -39,6 +39,12 @@ try:
             elif line == "SWITCHED_FLYING_MODE":
                 print("FLYING_MODE, execute flying mode script...")
                 subprocess.run(["python", "test_paramiko_cansend_mode_flying.py"])  # 外部スクリプト実行
+            elif line == "CURRENT_STANBY_MODE":
+                None
+            elif line == "CURRENT_SUPPLYING_MODE":
+                None
+            elif line == "CURRENT_FLYING_MODE":
+                None
             else:
                 None
             #pass
