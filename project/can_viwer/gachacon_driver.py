@@ -148,8 +148,8 @@ while 1:
                         #この状態には遷移しない
                         #Current_state = State.Flying
                     else:
-                        # None, この状態には遷移しない
-                        Current_state = State.Stanby
+                        None
+                        #この状態には遷移しない
                     #pass
                 #pass                    
             except KeyError:
