@@ -117,9 +117,14 @@ while 1:
                     strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
                     data = int(strdata[0], 16)
                     if data == 0x00:
+                        # どんなCurrent_stateでもStanbyに遷移
                         Current_state = State.Stanby
                     elif data == 0x01:
-                        Current_state = State.Supplying_Precharge
+                        if Current_state == State.Stanby:
+                            Current_state = State.Supplying_Precharge
+                        else:
+                            # Current_stateがStanby以外の場合は遷移しない
+                            None
                     elif data == 0x02:
                         None
                         #この状態には遷移しない
@@ -129,7 +134,11 @@ while 1:
                         #この状態には遷移しない
                         #Current_state = State.Supplying
                     elif data == 0x04:
-                        Current_state = State.Flying_Precharge
+                        if Current_state == State.Stanby:
+                            Current_state = State.Flying_Precharge
+                        else:
+                            # Current_stateがStanby以外の場合は遷移しない
+                            None
                     elif data == 0x05:
                         None
                         #この状態には遷移しない
