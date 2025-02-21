@@ -1,3 +1,20 @@
+/* 
+# Flight mode button for arduino nano every
+
+## Description:
+Main switch           →→ Arduino Nano Every → USB → UART, Serial → Python → PC
+Flying mode switch    →↑
+Supplying mode switch →↑
+
+## Reference:
+1. Arduino Nano Every — Arduino Online Shop
+https://store-usa.arduino.cc/products/arduino-nano-every?srsltid=AfmBOopT4m2ACwbTL1XJ0E0ZtFIOGySWbm_JmXyK9p6GdMqJo2xQ0pmp
+2. Arduino Nano Every, Pin assignment
+https://content.arduino.cc/assets/Pinout-NANOevery_latest.pdf
+3. Arduino ボタン Python 連携
+https://chatgpt.com/share/67b7bd55-c9ac-800c-bb8b-c0932ccf00a2
+*/
+
 #include <Arduino.h>
 
 const int buttonPin = 2;  // ボタンを接続するピン
