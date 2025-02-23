@@ -33,6 +33,13 @@ number_of_element = number_of_devices*4
 outjson = [0 for _ in range(number_of_element)]
 outjson_old = [0 for _ in range(number_of_element)]
 
+Wait_seconds_Supply_Relay_Precharge = 5
+Count_seconds_Supply_Relay_Precharge = 0
+
+Wait_seconds_Motor_Relay_Precharge = 5
+Count_seconds_Motor_Relay_Precharge = 0
+
+
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
     msg = can_bus.recv(2.0)
@@ -122,6 +129,8 @@ while 1:
                     if data == 0x00:
                         # どんなCurrent_stateでもStanbyに遷移
                         Current_state = State.Stanby
+                        Count_seconds_Supply_Relay_Precharge = 0
+                        Count_seconds_Motor_Relay_Precharge = 0
                     elif data == 0x01:
                         if Current_state == State.Stanby:
                             Current_state = State.Supplying_Precharge
@@ -218,7 +227,11 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))  # 22 500A Relay, precharge on
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
-            Current_state = State.Supplying_Intermediate
+            
+            if Count_seconds_Supply_Relay_Precharge >= Wait_seconds_Supply_Relay_Precharge:
+                Current_state = State.Supplying_Intermediate
+            else:
+                None
         elif Current_state == State.Supplying_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
@@ -274,7 +287,10 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))  # 22 500A Relay, precharge on
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
-            Current_state = State.Flying_Supply_Intermediate
+            if Count_seconds_Supply_Relay_Precharge >= Wait_seconds_Supply_Relay_Precharge:
+                Current_state = State.Flying_Supply_Intermediate
+            else:
+                None
         elif Current_state == State.Flying_Supply_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
@@ -331,7 +347,10 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, supplying now
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
-            Current_state = State.Flying_ESC_Intermediate
+            if Count_seconds_Motor_Relay_Precharge >= Wait_seconds_Motor_Relay_Precharge:
+                Current_state = State.Flying_ESC_Intermediate
+            else:
+                None
         elif Current_state == State.Flying_ESC_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))  # 01 motor, intermedate: precharge and main relay ON
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))  # 02 motor, intermedate: precharge and main relay ON
@@ -375,4 +394,7 @@ while 1:
         #pass
     #time.sleep(0.001)
 print("")
+
+
+
 
