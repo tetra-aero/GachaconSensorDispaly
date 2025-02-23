@@ -33,10 +33,10 @@ number_of_element = number_of_devices*4
 outjson = [0 for _ in range(number_of_element)]
 outjson_old = [0 for _ in range(number_of_element)]
 
-Wait_seconds_Supply_Relay_Precharge = 5
+Wait_seconds_Supply_Relay_Precharge = 7
 Count_seconds_Supply_Relay_Precharge = 0
 
-Wait_seconds_Motor_Relay_Precharge = 5
+Wait_seconds_Motor_Relay_Precharge = 7
 Count_seconds_Motor_Relay_Precharge = 0
 
 
