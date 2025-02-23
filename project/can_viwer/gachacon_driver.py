@@ -233,6 +233,7 @@ while 1:
                 Current_state = State.Supplying_Intermediate
             else:
                 None
+            Count_seconds_Supply_Relay_Precharge = Count_seconds_Supply_Relay_Precharge + 1
         elif Current_state == State.Supplying_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
@@ -294,6 +295,7 @@ while 1:
                 Current_state = State.Flying_Supply_Intermediate
             else:
                 None
+            Count_seconds_Supply_Relay_Precharge = Count_seconds_Supply_Relay_Precharge + 1
         elif Current_state == State.Flying_Supply_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
@@ -366,6 +368,7 @@ while 1:
                 Current_state = State.Flying_ESC_Intermediate
             else:
                 None
+            Count_seconds_Motor_Relay_Precharge = Count_seconds_Motor_Relay_Precharge + 1
         elif Current_state == State.Flying_ESC_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))  # 01 motor, intermedate: precharge and main relay ON
             time.sleep(0.1)
