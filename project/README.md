@@ -35,3 +35,16 @@ pip install --break-system-packages python-can
 
 sudo mkdir -p /mnt/ramdisk
 ```
+
+
+# その他
+```
+ sudo systemctl disable follow_up_gachacon_json_gateway.service
+
+tetra@debian:~$ systemctl status follow_up_gachacon_json_gateway.service
+○ follow_up_gachacon_json_gateway.service - Follow-up Gachacon JSON Gateway Service
+     Loaded: loaded (/etc/systemd/system/follow_up_gachacon_json_gateway.service; disabled; preset: enabled)
+     Active: inactive (dead)
+
+```
+

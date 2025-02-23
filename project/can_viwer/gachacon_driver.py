@@ -8,13 +8,16 @@ from datetime import datetime, timedelta
 from enum import Enum
 
 class State(Enum):
-    Stanby                  = 0
-    Supplying_Precharge     = 1
-    Supplying_Intermediate  = 2
-    Supplying               = 3
-    Flying_Precharge        = 4
-    Flying_Intermediate     = 5
-    Flying                  = 6
+    Stanby                      = 0
+    Supplying_Precharge         = 1
+    Supplying_Intermediate      = 2
+    Supplying                   = 3
+    Flying_Supply_Precharge     = 4
+    Flying_Supply_Intermediate  = 5
+    Flying_Supply_only          = 6
+    Flying_ESC_Precharge        = 7
+    Flying_ESC_Intermediate     = 8
+    Flying                      = 9
     
 
 Current_state = State.Stanby
@@ -135,15 +138,27 @@ while 1:
                         #Current_state = State.Supplying
                     elif data == 0x04:
                         if Current_state == State.Stanby:
-                            Current_state = State.Flying_Precharge
+                            Current_state = State.Flying_Supply_Precharge
                         else:
                             # Current_stateがStanby以外の場合は遷移しない
                             None
                     elif data == 0x05:
                         None
                         #この状態には遷移しない
-                        #Current_state = State.Flying_Intermediate
+                        #Current_state = State.Flying_Supply_Intermediate
                     elif data == 0x06:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Flying_Supply_only
+                    elif data == 0x07:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Flying_ESC_Precharge
+                    elif data == 0x08:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Flying_ESC_Intermediate
+                    elif data == 0x09:
                         None
                         #この状態には遷移しない
                         #Current_state = State.Flying
@@ -185,58 +200,6 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))  # 22 500A Relay, OFF
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x00], is_extended_id=True))  # 0F patrol light, OFF
-        elif Current_state == State.Flying_Precharge:
-            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x80], is_extended_id=True))  # 01 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x80], is_extended_id=True))  # 02 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x80], is_extended_id=True))  # 03 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x80], is_extended_id=True))  # 04 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x80], is_extended_id=True))  # 05 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x80], is_extended_id=True))  # 06 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x80], is_extended_id=True))  # 07 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x80], is_extended_id=True))  # 08 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x80], is_extended_id=True))  # 09 motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x80], is_extended_id=True))  # 0A motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x80], is_extended_id=True))  # 0B motor, precharge on
-            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))  # 0C motor, precharge on
-
-            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x80], is_extended_id=True))  # 21 500A Relay, precharge on
-            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))  # 22 500A Relay, precharge on
-            Current_state = State.Flying_Intermediate
-        elif Current_state == State.Flying_Intermediate:
-            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))  # 01 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))  # 02 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0xC0], is_extended_id=True))  # 03 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0xC0], is_extended_id=True))  # 04 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0xC0], is_extended_id=True))  # 05 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0xC0], is_extended_id=True))  # 06 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0xC0], is_extended_id=True))  # 07 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0xC0], is_extended_id=True))  # 08 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0xC0], is_extended_id=True))  # 09 motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0xC0], is_extended_id=True))  # 0A motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0xC0], is_extended_id=True))  # 0B motor, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0xC0], is_extended_id=True))  # 0C motor, intermedate: precharge and main relay ON
- 
-            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0xC0], is_extended_id=True))  # 21 500A Relay, intermedate: precharge and main relay ON
-            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0xC0], is_extended_id=True))  # 22 500A Relay, intermedate: precharge and main relay ON
-            Current_state = State.Flying
-        elif Current_state == State.Flying:
-            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x40], is_extended_id=True))  # 01 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x40], is_extended_id=True))  # 02 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x40], is_extended_id=True))  # 03 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x40], is_extended_id=True))  # 04 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x40], is_extended_id=True))  # 05 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x40], is_extended_id=True))  # 06 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x40], is_extended_id=True))  # 07 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x40], is_extended_id=True))  # 08 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x40], is_extended_id=True))  # 09 motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x40], is_extended_id=True))  # 0A motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x40], is_extended_id=True))  # 0B motor, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x40], is_extended_id=True))  # 0C motor, main relay ON, ready to flying
-
-            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))  # 21 500A Relay, main relay ON, ready to flying
-            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, ready to flying
-
-            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0xC0], is_extended_id=True))  # 0F patrol light, 8 and 4 ON
         elif Current_state == State.Supplying_Precharge:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
@@ -253,6 +216,8 @@ while 1:
 
             can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x80], is_extended_id=True))  # 21 500A Relay, precharge on
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))  # 22 500A Relay, precharge on
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
             Current_state = State.Supplying_Intermediate
         elif Current_state == State.Supplying_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
@@ -270,6 +235,8 @@ while 1:
 
             can_bus.send(can.Message(arbitration_id=0x00001221, data=[0xC0], is_extended_id=True))  # 21 500A Relay, intermedate: precharge and main relay ON
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0xC0], is_extended_id=True))  # 22 500A Relay, intermedate: precharge and main relay ON
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
             Current_state = State.Supplying
         elif Current_state == State.Supplying:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
@@ -289,6 +256,119 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, supplying now
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+        elif Current_state == State.Flying_Supply_Precharge:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x00], is_extended_id=True))  # 03 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x00], is_extended_id=True))  # 04 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x00], is_extended_id=True))  # 05 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x00], is_extended_id=True))  # 06 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x00], is_extended_id=True))  # 07 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x00], is_extended_id=True))  # 08 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x00], is_extended_id=True))  # 09 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x00], is_extended_id=True))  # 0A motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x00], is_extended_id=True))  # 0B motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x00], is_extended_id=True))  # 0C motor, OFF
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x80], is_extended_id=True))  # 21 500A Relay, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x80], is_extended_id=True))  # 22 500A Relay, precharge on
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+            Current_state = State.Flying_Supply_Intermediate
+        elif Current_state == State.Flying_Supply_Intermediate:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x00], is_extended_id=True))  # 03 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x00], is_extended_id=True))  # 04 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x00], is_extended_id=True))  # 05 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x00], is_extended_id=True))  # 06 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x00], is_extended_id=True))  # 07 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x00], is_extended_id=True))  # 08 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x00], is_extended_id=True))  # 09 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x00], is_extended_id=True))  # 0A motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x00], is_extended_id=True))  # 0B motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x00], is_extended_id=True))  # 0C motor, OFF
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0xC0], is_extended_id=True))  # 21 500A Relay, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0xC0], is_extended_id=True))  # 22 500A Relay, intermedate: precharge and main relay ON
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+            Current_state = State.Flying_Supply_only
+        elif Current_state == State.Flying_Supply_only:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x00], is_extended_id=True))  # 03 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x00], is_extended_id=True))  # 04 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x00], is_extended_id=True))  # 05 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x00], is_extended_id=True))  # 06 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x00], is_extended_id=True))  # 07 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x00], is_extended_id=True))  # 08 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x00], is_extended_id=True))  # 09 motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x00], is_extended_id=True))  # 0A motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x00], is_extended_id=True))  # 0B motor, OFF
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x00], is_extended_id=True))  # 0C motor, OFF
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))  # 21 500A Relay, main relay ON, supplying now
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, supplying now
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+            Current_state = State.Flying_ESC_Precharge
+        elif Current_state == State.Flying_ESC_Precharge:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x80], is_extended_id=True))  # 01 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x80], is_extended_id=True))  # 02 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x80], is_extended_id=True))  # 03 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x80], is_extended_id=True))  # 04 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x80], is_extended_id=True))  # 05 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x80], is_extended_id=True))  # 06 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x80], is_extended_id=True))  # 07 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x80], is_extended_id=True))  # 08 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x80], is_extended_id=True))  # 09 motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x80], is_extended_id=True))  # 0A motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x80], is_extended_id=True))  # 0B motor, precharge on
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))  # 0C motor, precharge on
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))  # 21 500A Relay, main relay ON, supplying now
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, supplying now
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+            Current_state = State.Flying_ESC_Intermediate
+        elif Current_state == State.Flying_ESC_Intermediate:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))  # 01 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))  # 02 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0xC0], is_extended_id=True))  # 03 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0xC0], is_extended_id=True))  # 04 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0xC0], is_extended_id=True))  # 05 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0xC0], is_extended_id=True))  # 06 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0xC0], is_extended_id=True))  # 07 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0xC0], is_extended_id=True))  # 08 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0xC0], is_extended_id=True))  # 09 motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0xC0], is_extended_id=True))  # 0A motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0xC0], is_extended_id=True))  # 0B motor, intermedate: precharge and main relay ON
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0xC0], is_extended_id=True))  # 0C motor, intermedate: precharge and main relay ON
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))  # 21 500A Relay, main relay ON, supplying now
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, supplying now
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0x80], is_extended_id=True))  # 0F patrol light, 8 ON
+            Current_state = State.Flying
+        elif Current_state == State.Flying:
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x40], is_extended_id=True))  # 01 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x40], is_extended_id=True))  # 02 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x40], is_extended_id=True))  # 03 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x40], is_extended_id=True))  # 04 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x40], is_extended_id=True))  # 05 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x40], is_extended_id=True))  # 06 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x40], is_extended_id=True))  # 07 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x40], is_extended_id=True))  # 08 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x40], is_extended_id=True))  # 09 motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x40], is_extended_id=True))  # 0A motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x40], is_extended_id=True))  # 0B motor, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x40], is_extended_id=True))  # 0C motor, main relay ON, ready to flying
+
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x40], is_extended_id=True))  # 21 500A Relay, main relay ON, ready to flying
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, ready to flying
+
+            can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0xC0], is_extended_id=True))  # 0F patrol light, 8 and 4 ON
         else:
             # None, この状態には遷移しない
             can_bus.send(can.Message(arbitration_id=0x000012FF, data=[0x00], is_extended_id=True))  # FF all OFF
