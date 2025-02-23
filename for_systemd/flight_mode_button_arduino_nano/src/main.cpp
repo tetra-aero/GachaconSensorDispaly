@@ -68,8 +68,13 @@ void setup() {
     pinMode(BuildinLEDPin, OUTPUT); // LEDを出力モードに設定
 
     pinMode(EmergencybuttonPin, INPUT_PULLUP);    // 内部プルアップ抵抗を有効化
-    pinMode(SupplyingbuttonPin, INPUT_PULLUP);  // 内部プルアップ抵抗を有効化
-    pinMode(FlyingbuttonPin, INPUT_PULLUP);     // 内部プルアップ抵抗を有効化
+    //pinMode(SupplyingbuttonPin, INPUT_PULLUP);  // 内部プルアップ抵抗を有効化
+    //pinMode(FlyingbuttonPin, INPUT_PULLUP);     // 内部プルアップ抵抗を有効化
+
+    //pinMode(EmergencybuttonPin, INPUT_PULLDOWN);    // 内部プルダウン抵抗を有効化
+    pinMode(SupplyingbuttonPin, INPUT_PULLDOWN);  // 内部プルダウン抵抗を有効化
+    pinMode(FlyingbuttonPin, INPUT_PULLDOWN);     // 内部プルダウン抵抗を有効化
+
 
     Serial.begin(115200);
 
@@ -115,7 +120,7 @@ void loop() {
     else if (SupplyingbuttonSwitched) {
         Serial.print("\n");
         //Serial.println("SWITCHED_SUPPLYING_MODE_BUTTON");
-        if (SupplyingbuttonState == LOW) { // active low
+        if (SupplyingbuttonState == HIGH) { // active high 
             if (current_state == STANDBY_MODE) {
                 Serial.println("SWITCHED_SUPPLYING_MODE"); // Pythonに通知
                 current_state = SUPPLYING_MODE;
@@ -124,7 +129,7 @@ void loop() {
               // 何もしない
             }
         }
-        else {  //SupplyingbuttonState == HIGH
+        else {  //SupplyingbuttonState == LOW
             if (current_state == SUPPLYING_MODE) {
                 // Standby modeに戻る
                 Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
@@ -139,7 +144,7 @@ void loop() {
     else if (FlyingbuttonSwitched) {
         Serial.print("\n");
         //Serial.println("SWITCHED_FLYING_MODE_BUTTON");
-        if (FlyingbuttonState == LOW) { // active low
+        if (FlyingbuttonState == HIGH) { // active high
             if (current_state == STANDBY_MODE) {
                 Serial.println("SWITCHED_FLYING_MODE"); // Pythonに通知
                 current_state = FLYING_MODE;
@@ -148,7 +153,7 @@ void loop() {
                 // 何もしない
             }
         }
-        else {  //FlyingbuttonState == HIGH
+        else {  //FlyingbuttonState == LOW
             if (current_state == FLYING_MODE) { 
                 // Standby modeに戻る
                 Serial.println("SWITCHED_STANDBY_MODE"); // Pythonに通知
