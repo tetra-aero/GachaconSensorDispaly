@@ -33,12 +33,16 @@ number_of_element = number_of_devices*4
 outjson = [0 for _ in range(number_of_element)]
 outjson_old = [0 for _ in range(number_of_element)]
 
+outjson_list_0x1300_voltage     = {}
+outjson_list_0x2000_throttle    = {}
+outjson_list_0x2200_current     = {}
+outjson_list_0x6000_mode        = {}
+
 Wait_seconds_Supply_Relay_Precharge = 7
 Count_seconds_Supply_Relay_Precharge = 0
 
 Wait_seconds_Motor_Relay_Precharge = 7
 Count_seconds_Motor_Relay_Precharge = 0
-
 
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
