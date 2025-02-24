@@ -43,7 +43,7 @@ volatile bool FlyingbuttonSwitched = false;    // Flyingモード割り込み用
 const int BuildinLEDPin = 13;  // 基板に実装済みのLED
 
 int period_count = 0;
-int period = 20; // 20 * 0.1s = 2s
+int period = 5; // 5 * 0.2s = 1s
 
 int EmergencybuttonState;     // Emergencyモードボタンの状態を取得
 int SupplyingbuttonState; // Suppyingモードボタンの状態を取得
@@ -51,16 +51,19 @@ int FlyingbuttonState;       // Flyingモードボタンの状態を取得
 
 // Emergencyモード割り込みハンドラ（ISR）
 void EmergencybuttonISR() { 
+    //Serial.println("EmergencybuttonISR");
     EmergencybuttonSwitched = true;
 }
 
 // Suppyingモード割り込みハンドラ（ISR）
 void SupplyingbuttonISR() { 
+    //Serial.println("SupplyingbuttonISR\n");
     SupplyingbuttonSwitched = true;
 }
 
 // Flyingモード割り込みハンドラ（ISR）
 void FlyingbuttonISR() { 
+    //Serial.println("FlyingbuttonISR\n");
     FlyingbuttonSwitched = true;
 }
 
