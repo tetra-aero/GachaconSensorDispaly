@@ -1,0 +1,229 @@
+[
+    [
+        {
+            "title": "Battery Voltage No.1",
+            "data": 4684.9,
+            "raw": "0xB701",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.2",
+            "data": 4940.9,
+            "raw": "0xC101",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.3",
+            "data": 4812.9,
+            "raw": "0xBC01",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.4",
+            "data": 4684.9,
+            "raw": "0xB701",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.5",
+            "data": 4864.1,
+            "raw": "0xBE01",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.6",
+            "data": 5043.3,
+            "raw": "0xC501",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.7",
+            "data": 5068.9,
+            "raw": "0xC601",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.8",
+            "data": 4582.5,
+            "raw": "0xB301",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.9",
+            "data": 4761.7,
+            "raw": "0xBA01",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.10",
+            "data": 4736.1,
+            "raw": "0xB901",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.11",
+            "data": 4608.1,
+            "raw": "0xB401",
+            "unit": " V"
+        },
+        {
+            "title": "Battery Voltage No.12",
+            "data": 4352.1,
+            "raw": "0xAA01",
+            "unit": " V"
+        }
+    ],
+    [
+        {
+            "title": "Throttle No.1",
+            "data": 4685.0,
+            "raw": "0xB702",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.2",
+            "data": 2176.2,
+            "raw": "0x5502",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.3",
+            "data": 4045.0,
+            "raw": "0x9E02",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.4",
+            "data": 6425.8,
+            "raw": "0xFB02",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.5",
+            "data": 2278.6,
+            "raw": "0x5902",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.6",
+            "data": 4173.0,
+            "raw": "0xA302",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.7",
+            "data": 2227.4,
+            "raw": "0x5702",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.8",
+            "data": 5734.6,
+            "raw": "0xE002",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.9",
+            "data": 5069.0,
+            "raw": "0xC602",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.10",
+            "data": 5862.6,
+            "raw": "0xE502",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.11",
+            "data": 5145.8,
+            "raw": "0xC902",
+            "unit": " RPM"
+        },
+        {
+            "title": "Throttle No.12",
+            "data": 5529.8,
+            "raw": "0xD802",
+            "unit": " RPM"
+        }
+    ],
+    [
+        {
+            "title": "Bus current No.1",
+            "data": 1997.7,
+            "raw": "0x4E09",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.2",
+            "data": 256.5,
+            "raw": "0x0A05",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.3",
+            "data": 435.8,
+            "raw": "0x1106",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.4",
+            "data": -1432.7,
+            "raw": "0x-37F7",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.5",
+            "data": 614.8,
+            "raw": "0x1804",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.6",
+            "data": 1434.2,
+            "raw": "0x3806",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.7",
+            "data": -716.5,
+            "raw": "0x-1BFD",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.8",
+            "data": 1895.2,
+            "raw": "0x4A08",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.9",
+            "data": -2380.1,
+            "raw": "0x-5CF9",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.10",
+            "data": -460.0,
+            "raw": "0x-11F8",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.11",
+            "data": 615.1,
+            "raw": "0x1807",
+            "unit": " A"
+        },
+        {
+            "title": "Bus current No.12",
+            "data": -690.4,
+            "raw": "0x-1AF8",
+            "unit": " A"
+        }
+    ],
+    [
+        {
+            "State": "Stanby"
+        }
+    ]
+]

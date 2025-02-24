@@ -33,10 +33,12 @@ number_of_element = number_of_devices*4
 outjson = [0 for _ in range(number_of_element)]
 outjson_old = [0 for _ in range(number_of_element)]
 
-outjson_list_0x1300_voltage     = {}
-outjson_list_0x2000_throttle    = {}
-outjson_list_0x2200_current     = {}
-outjson_list_0x6000_mode        = {}
+outjson_list                    = []
+outjson_list_old                = []
+outjson_list_0x1300_voltage     = []
+outjson_list_0x2000_throttle    = []
+outjson_list_0x2200_current     = []
+outjson_list_0x6000_mode        = []
 
 Wait_seconds_Supply_Relay_Precharge = 7
 Count_seconds_Supply_Relay_Precharge = 0
@@ -77,6 +79,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)
                     outjson[number_of_devices*0+i] = object_data
+                    outjson_list_0x1300_voltage.append(object_data)
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
@@ -89,6 +92,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*1+i] = object_data
+                    outjson_list_0x2000_throttle.append(object_data)
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2100 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2100 + i):04X}")].split()
@@ -115,6 +119,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*2+i] = object_data
+                    outjson_list_0x2200_current.append(object_data)
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2300 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2300 + i):04X}")].split()
@@ -187,14 +192,30 @@ while 1:
         object_data = {}
         object_data["State"] = Current_state.name
         outjson[number_of_devices*3+0] = object_data
+        outjson_list_0x6000_mode.append(object_data)
 
-        with open('/mnt/ramdisk/output.json', 'w') as f:
+        outjson_list.append(outjson_list_0x1300_voltage)
+        outjson_list.append(outjson_list_0x2000_throttle)
+        outjson_list.append(outjson_list_0x2200_current)
+        outjson_list.append(outjson_list_0x6000_mode)
+
+        #with open('/mnt/ramdisk/output.json', 'w') as f:
+        with open('./output.json', 'w') as f:
             json.dump(outjson, f)
             outjson_old = outjson
             #print(jdata)
             jdata = {}
             previous_time = current_time
         
+        with open('./output_list.json', 'w') as f:
+            json.dump(outjson_list, f)
+            outjson_list_old = outjson_list
+            outjson_list = []
+            outjson_list_0x1300_voltage = []
+            outjson_list_0x2000_throttle = []
+            outjson_list_0x2200_current = []
+            outjson_list_0x6000_mode = []
+
         if Current_state == State.Stanby:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
