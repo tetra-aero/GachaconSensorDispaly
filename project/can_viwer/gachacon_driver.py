@@ -229,15 +229,6 @@ while 1:
         outjson_list.append(outjson_list_0x6000_mode)
 
         """
-        #with open('/mnt/ramdisk/output.json', 'w') as f:
-        with open('./output.json', 'w') as f:
-            json.dump(outjson, f)
-            outjson_old = outjson
-            #print(jdata)
-            jdata = {}
-            previous_time = current_time
-        """
-
         with open('./output_list.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
@@ -246,8 +237,8 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
-        
         """
+        
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
@@ -256,7 +247,6 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
-        """
         
         if Current_state == State.Stanby:
             Count_seconds_Supply_Relay_Precharge = 0
