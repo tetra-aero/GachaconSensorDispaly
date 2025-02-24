@@ -18,7 +18,9 @@ class State(Enum):
     Flying_ESC_Precharge        = 7
     Flying_ESC_Intermediate     = 8
     Flying                      = 9
-    
+    Discharge_Precharge         = 10
+    Discharge_Intermidiate      = 11
+    Discharge                   = 12
 
 Current_state = State.Stanby
 jdata = {}
@@ -180,6 +182,20 @@ while 1:
                         None
                         #この状態には遷移しない
                         #Current_state = State.Flying
+                    elif data == 0x0A:
+                        if Current_state == State.Stanby:
+                            Current_state = State.Discharge_Precharge
+                        else:
+                            # Current_stateがStanby以外の場合は遷移しない
+                            None
+                    elif data == 0x0B:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Discharge_Intermidiate
+                    elif data == 0x0C:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Discharge
                     else:
                         None
                         #この状態には遷移しない
@@ -455,6 +471,84 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, ready to flying
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0xC0], is_extended_id=True))  # 0F patrol light, 8 and 4 ON
+        elif Current_state == State.Discharge_Precharge:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))  # 21 500A Relay, main relay OFF
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))  # 22 500A Relay, main relay OFF
+
+            time.sleep(0.3)
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))
+
+            if Count_seconds_Motor_Relay_Precharge >= Wait_seconds_Motor_Relay_Precharge:
+                Current_state = State.Discharge_Intermidiate
+            else:
+                None
+            Count_seconds_Motor_Relay_Precharge = Count_seconds_Motor_Relay_Precharge + 1
+        elif Current_state == State.Discharge_Intermidiate:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))
+
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0xC0], is_extended_id=True))
+            Current_state = State.Discharge
+        elif Current_state == State.Discharge:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))
+
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x40], is_extended_id=True)) 
         else:
             # None, この状態には遷移しない
             can_bus.send(can.Message(arbitration_id=0x000012FF, data=[0x00], is_extended_id=True))  # FF all OFF
