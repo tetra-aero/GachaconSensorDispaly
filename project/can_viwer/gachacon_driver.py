@@ -199,6 +199,7 @@ while 1:
         outjson_list.append(outjson_list_0x2200_current)
         outjson_list.append(outjson_list_0x6000_mode)
 
+        """
         #with open('/mnt/ramdisk/output.json', 'w') as f:
         with open('./output.json', 'w') as f:
             json.dump(outjson, f)
@@ -206,7 +207,9 @@ while 1:
             #print(jdata)
             jdata = {}
             previous_time = current_time
-        
+        """
+
+        """
         with open('./output_list.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
@@ -215,7 +218,17 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
-
+        """
+        
+        with open('/mnt/ramdisk/output.json', 'w') as f:
+            json.dump(outjson_list, f)
+            outjson_list_old = outjson_list
+            outjson_list = []
+            outjson_list_0x1300_voltage = []
+            outjson_list_0x2000_throttle = []
+            outjson_list_0x2200_current = []
+            outjson_list_0x6000_mode = []
+        
         if Current_state == State.Stanby:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
             can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x00], is_extended_id=True))  # 02 motor, OFF
