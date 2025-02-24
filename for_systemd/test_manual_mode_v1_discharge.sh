@@ -1,4 +1,5 @@
 # discharge
+
 cansend can2 00001221#00
 cansend can2 00001221#00
 
@@ -27,4 +28,3 @@ cansend can1 00001209#C0
 cansend can1 0000120A#C0
 cansend can1 0000120B#C0
 cansend can1 0000120C#C0
-
