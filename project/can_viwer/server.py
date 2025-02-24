@@ -16,6 +16,7 @@ def static(filename):
 @app.route('/js/<filename>')
 def static(filename):
     return static_file(filename, root='./js')
+
 @app.route('/json')
 def static():
     with open('/mnt/ramdisk/output.json', 'r') as f:
@@ -24,6 +25,13 @@ def static():
         #response.content_type = 'application/json'
     return  json.dumps(jdata) 
 
+@app.route('/jsonv1')
+def static():
+    with open('/mnt/ramdisk/outputv1.json', 'r') as f:
+        jdatav1 = json.load(f)
+        #print(jdata)
+        #response.content_type = 'application/json'
+    return  json.dumps(jdatav1) 
 
 @app.route('/css/<filename>')
 def static(filename):

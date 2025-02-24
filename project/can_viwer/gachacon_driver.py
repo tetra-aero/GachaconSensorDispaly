@@ -220,13 +220,21 @@ while 1:
         
         object_data = {}
         object_data["State"] = Current_state.name
-        outjson[number_of_devices*3+0] = object_data
+        #outjson[number_of_devices*3+0] = object_data
         outjson_list_0x6000_mode.append(object_data)
 
         outjson_list.append(outjson_list_0x1300_voltage)
         outjson_list.append(outjson_list_0x2000_throttle)
         outjson_list.append(outjson_list_0x2200_current)
         outjson_list.append(outjson_list_0x6000_mode)
+
+        with open('/mnt/ramdisk/outputv1.json', 'w') as f:
+            #with open('./output.json', 'w') as f:
+            json.dump(outjson, f)
+            outjson_old = outjson
+            #print(jdata)
+            jdata = {}
+            previous_time = current_time
 
         """
         with open('./output_list.json', 'w') as f:
@@ -238,7 +246,7 @@ while 1:
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
         """
-        
+
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
