@@ -67,16 +67,17 @@ while 1:
     ## 1秒起きに実行
     #=========================================================================#
     if current_time.second != previous_time.second:
-        #print(jdata)
+        print(jdata)
         for i in range(number_of_devices):
             try:
             #--------------------------------------------------------------------------#
                 if f"0x{(0x1300 + i):04X}" in jdata:
+                    # 0x1300, voltage, uint16_t bus_voltage; バス電圧, 0.1V
                     strdata = jdata[(f"0x{(0x1300 + i):04X}")].split()
                     data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
                     object_data["title"] = "Battery Voltage No." + str(i)
-                    object_data["data"] = round( (data/10.0) ,2)
+                    object_data["data"] = round( (data/10.0) ,1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
                     print(object_data)
@@ -85,12 +86,16 @@ while 1:
                     outjson_list_0x1300_voltage.append(object_data)
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
+                    # 0x2000, throttle, int32_t rpm_speed; 回転速度
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
-                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
+                    data = (int(strdata[3], 16)<<24 | int(strdata[2], 16)<<16 | int(strdata[1], 16)<<8 | int(strdata[0], 16))
+                    if data >= 0x80000000:
+                        data -= 0x100000000  # 2の補数を利用して負の値に変換
                     object_data = {}
                     object_data["title"] = "Throttle No." + str(i)
-                    object_data["data"] = round(  (data/10.0) , 2)
-                    object_data["raw"] = ("0x"+format(data, '04X'))
+                    #object_data["data"] = round(  (data/10.0) , 2)
+                    object_data["data"] = data
+                    object_data["raw"] = ("0x"+format(data, '08X'))
                     object_data["unit"] = " RPM"
                     print(object_data)
                     #outjson.append(object_data)  
@@ -110,6 +115,7 @@ while 1:
                 #    outjson[number_of_devices*2+i] = object_data
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2200 + i):04X}" in jdata:
+                    # 0x2200, current, int16_t bus_current; バス電流, 0.1A
                     strdata = jdata[(f"0x{(0x2200 + i):04X}")].split()
                     data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     if data >= 0x8000:
@@ -232,7 +238,6 @@ while 1:
             previous_time = current_time
         """
 
-        """
         with open('./output_list.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
@@ -241,8 +246,8 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
-        """
         
+        """
         with open('/mnt/ramdisk/output.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
@@ -251,6 +256,7 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
+        """
         
         if Current_state == State.Stanby:
             Count_seconds_Supply_Relay_Precharge = 0
