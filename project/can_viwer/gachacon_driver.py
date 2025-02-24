@@ -18,7 +18,9 @@ class State(Enum):
     Flying_ESC_Precharge        = 7
     Flying_ESC_Intermediate     = 8
     Flying                      = 9
-    
+    Discharge_Precharge         = 10
+    Discharge_Intermidiate      = 11
+    Discharge                   = 12
 
 Current_state = State.Stanby
 jdata = {}
@@ -33,12 +35,18 @@ number_of_element = number_of_devices*4
 outjson = [0 for _ in range(number_of_element)]
 outjson_old = [0 for _ in range(number_of_element)]
 
+outjson_list                    = []
+outjson_list_old                = []
+outjson_list_0x1300_voltage     = []
+outjson_list_0x2000_throttle    = []
+outjson_list_0x2200_current     = []
+outjson_list_0x6000_mode        = []
+
 Wait_seconds_Supply_Relay_Precharge = 7
 Count_seconds_Supply_Relay_Precharge = 0
 
 Wait_seconds_Motor_Relay_Precharge = 7
 Count_seconds_Motor_Relay_Precharge = 0
-
 
 while 1:
     current_time = datetime.now()  # 現在の時刻を取得
@@ -73,6 +81,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)
                     outjson[number_of_devices*0+i] = object_data
+                    outjson_list_0x1300_voltage.append(object_data)
             #--------------------------------------------------------------------------#
                 if f"0x{(0x2000 + i):04X}" in jdata:
                     strdata = jdata[(f"0x{(0x2000 + i):04X}")].split()
@@ -85,6 +94,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*1+i] = object_data
+                    outjson_list_0x2000_throttle.append(object_data)
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2100 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2100 + i):04X}")].split()
@@ -111,6 +121,7 @@ while 1:
                     print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*2+i] = object_data
+                    outjson_list_0x2200_current.append(object_data)
             #--------------------------------------------------------------------------#
                 #elif f"0x{(0x2300 + i):04X}" in jdata:
                 #    strdata = jdata[(f"0x{(0x2300 + i):04X}")].split()
@@ -171,6 +182,20 @@ while 1:
                         None
                         #この状態には遷移しない
                         #Current_state = State.Flying
+                    elif data == 0x0A:
+                        if Current_state == State.Stanby:
+                            Current_state = State.Discharge_Precharge
+                        else:
+                            # Current_stateがStanby以外の場合は遷移しない
+                            None
+                    elif data == 0x0B:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Discharge_Intermidiate
+                    elif data == 0x0C:
+                        None
+                        #この状態には遷移しない
+                        #Current_state = State.Discharge
                     else:
                         None
                         #この状態には遷移しない
@@ -183,13 +208,42 @@ while 1:
         object_data = {}
         object_data["State"] = Current_state.name
         outjson[number_of_devices*3+0] = object_data
+        outjson_list_0x6000_mode.append(object_data)
 
-        with open('/mnt/ramdisk/output.json', 'w') as f:
+        outjson_list.append(outjson_list_0x1300_voltage)
+        outjson_list.append(outjson_list_0x2000_throttle)
+        outjson_list.append(outjson_list_0x2200_current)
+        outjson_list.append(outjson_list_0x6000_mode)
+
+        """
+        #with open('/mnt/ramdisk/output.json', 'w') as f:
+        with open('./output.json', 'w') as f:
             json.dump(outjson, f)
             outjson_old = outjson
             #print(jdata)
             jdata = {}
             previous_time = current_time
+        """
+
+        """
+        with open('./output_list.json', 'w') as f:
+            json.dump(outjson_list, f)
+            outjson_list_old = outjson_list
+            outjson_list = []
+            outjson_list_0x1300_voltage = []
+            outjson_list_0x2000_throttle = []
+            outjson_list_0x2200_current = []
+            outjson_list_0x6000_mode = []
+        """
+        
+        with open('/mnt/ramdisk/output.json', 'w') as f:
+            json.dump(outjson_list, f)
+            outjson_list_old = outjson_list
+            outjson_list = []
+            outjson_list_0x1300_voltage = []
+            outjson_list_0x2000_throttle = []
+            outjson_list_0x2200_current = []
+            outjson_list_0x6000_mode = []
         
         if Current_state == State.Stanby:
             can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x00], is_extended_id=True))  # 01 motor, OFF
@@ -417,6 +471,84 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x40], is_extended_id=True))  # 22 500A Relay, main relay ON, ready to flying
 
             can_bus.send(can.Message(arbitration_id=0x0000120F, data=[0xC0], is_extended_id=True))  # 0F patrol light, 8 and 4 ON
+        elif Current_state == State.Discharge_Precharge:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))  # 21 500A Relay, main relay OFF
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))  # 22 500A Relay, main relay OFF
+
+            time.sleep(0.3)
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x80], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))
+
+            if Count_seconds_Motor_Relay_Precharge >= Wait_seconds_Motor_Relay_Precharge:
+                Current_state = State.Discharge_Intermidiate
+            else:
+                None
+            Count_seconds_Motor_Relay_Precharge = Count_seconds_Motor_Relay_Precharge + 1
+        elif Current_state == State.Discharge_Intermidiate:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))
+
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0xC0], is_extended_id=True))
+            time.sleep(0.1)
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0xC0], is_extended_id=True))
+            Current_state = State.Discharge
+        elif Current_state == State.Discharge:
+            can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))
+
+            can_bus.send(can.Message(arbitration_id=0x00001201, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001202, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001203, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001204, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001205, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001206, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001207, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001208, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x00001209, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120A, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120B, data=[0x40], is_extended_id=True))
+            can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x40], is_extended_id=True)) 
         else:
             # None, この状態には遷移しない
             can_bus.send(can.Message(arbitration_id=0x000012FF, data=[0x00], is_extended_id=True))  # FF all OFF

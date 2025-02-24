@@ -23,6 +23,7 @@
 import serial
 import subprocess
 from enum import Enum
+import datetime
 
 # Arduinoのシリアルポートを指定（適宜変更）
 SERIAL_PORT = "/dev/ttyACM0"  # Windowsなら "COM3" などに変更
@@ -35,6 +36,7 @@ class State(Enum):
     EMERGENCY_MODE = -1
 
 current_state = State.STANDBY_MODE
+
 
 try:
     # シリアルポートを開く
@@ -57,7 +59,7 @@ try:
                 print("EMERGENCY_MODE, execute emergency mode script...")
                 subprocess.run(["python", "test_paramiko_cansend_mode_standby.py"])  # 外部スクリプト実行
                 current_state = State.EMERGENCY_MODE
-            elif line == "CURRENT_STANBY_MODE":
+            elif line == "CURRENT_STANDBY_MODE":
                 if current_state != State.STANDBY_MODE:
                     print("STANDBY_MODE, execute standby mode script...")
                     subprocess.run(["python", "test_paramiko_cansend_mode_standby.py"])
@@ -80,7 +82,11 @@ try:
             else:
                 None
             #pass
-            print("CURRENT_STATE: " + current_state.name)
+            #print(".", end="")
+            #print(line)
+            #if line in ".":
+            print("CURRENT_STATE: " + current_state.name + ", " + datetime.datetime.now().isoformat())
+            #pass
         #pass
     #pass
 
