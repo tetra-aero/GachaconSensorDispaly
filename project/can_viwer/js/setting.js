@@ -1,4 +1,4 @@
 window.AppConfig = {
-  apiUrl:"/json",
+  apiUrl:"/jsonv1",
   accessFrequency: 1000,
 };

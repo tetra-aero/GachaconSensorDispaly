@@ -16,7 +16,7 @@ def static(filename):
 @app.route('/js/<filename>')
 def static(filename):
     return static_file(filename, root='./js')
-@app.route('/json')
+@app.route('/jsonv1')
 def static():
     with open('/mnt/ramdisk/output.json', 'r') as f:
         jdata = json.load(f)
