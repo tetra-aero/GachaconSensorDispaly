@@ -41,6 +41,7 @@ outjson_list_old                = []
 outjson_list_0x1300_voltage     = []
 outjson_list_0x2000_throttle    = []
 outjson_list_0x2200_current     = []
+outjson_list_0x2500_lv_voltage  = []
 outjson_list_0x6000_mode        = []
 
 Wait_seconds_Supply_Relay_Precharge = 7
@@ -76,7 +77,7 @@ while 1:
                     strdata = jdata[(f"0x{(0x1300 + i):04X}")].split()
                     data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
                     object_data = {}
-                    object_data["title"] = "Battery Voltage No." + str(i)
+                    object_data["title"] = "HV Bus Voltage No." + str(i)
                     object_data["data"] = round( (data/10.0) ,1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
@@ -141,7 +142,21 @@ while 1:
                     #outjson.append(object_data)  
                 #    outjson[number_of_devices*4+i] = object_data
             #--------------------------------------------------------------------------#
+                if f"0x{(0x2500 + 0x0F):04X}" in jdata:
+                    #0x250F, voltage, uint16_t Low_voltage_battery_voltage; Lowバッテリー電圧, 0.1V
+                    strdata = jdata[(f"0x{(0x2500 + 0x0F):04X}")].split()
+                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
+                    object_data = {}
+                    object_data["title"] = "LV Battery Voltage"
+                    object_data["data"] = round( (data/10.0) ,1)
+                    object_data["raw"] = ("0x"+format(data, '04X'))
+                    object_data["unit"] = " V"
+                    print(object_data)
+                    #outjson.append(object_data)
+                    outjson[number_of_devices*3+1] = object_data
+                    outjson_list_0x2500_lv_voltage.append(object_data)
                 if f"0x{(0x6000 + 0x0F):04X}" in jdata:
+                    # 0x600F, flight mode 切り替え, uint8_t 
                     strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
                     data = int(strdata[0], 16)
                     if data == 0x00:
@@ -219,14 +234,19 @@ while 1:
             #pass
         
         object_data = {}
+        object_data["title"] = "STATE"
+        object_data["data"] = Current_state.value
+        object_data["raw"] = Current_state.name
+        object_data["unit"] = Current_state.name
         object_data["State"] = Current_state.name
-        #outjson[number_of_devices*3+0] = object_data
+        outjson[number_of_devices*3+0] = object_data
         outjson_list_0x6000_mode.append(object_data)
 
         outjson_list.append(outjson_list_0x1300_voltage)
         outjson_list.append(outjson_list_0x2000_throttle)
         outjson_list.append(outjson_list_0x2200_current)
         outjson_list.append(outjson_list_0x6000_mode)
+        outjson_list.append(outjson_list_0x2500_lv_voltage)
 
         with open('/mnt/ramdisk/outputv1.json', 'w') as f:
             #with open('./output.json', 'w') as f:
@@ -245,6 +265,7 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
+            outjson_list_0x2500_lv_voltage = []
         """
 
         with open('/mnt/ramdisk/output.json', 'w') as f:
@@ -255,6 +276,7 @@ while 1:
             outjson_list_0x2000_throttle = []
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
+            outjson_list_0x2500_lv_voltage = []
         
         if Current_state == State.Stanby:
             Count_seconds_Supply_Relay_Precharge = 0
