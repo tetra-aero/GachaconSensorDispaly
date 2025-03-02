@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from enum import Enum
 
 class State(Enum):
-    Stanby                      = 0
+    Standby                      = 0
     Supplying_Precharge         = 1
     Supplying_Intermediate      = 2
     Supplying                   = 3
@@ -19,11 +19,11 @@ class State(Enum):
     Flying_ESC_Intermediate     = 8
     Flying                      = 9
     Discharge_Precharge         = 10
-    Discharge_Intermidiate      = 11
+    Discharge_Intermediate      = 11
     Discharge                   = 12
     Manual                      = 90 #0x5A
 
-Current_state = State.Stanby
+Current_state = State.Standby
 jdata = {}
 
 #can_bus = can.interface.Bus(channel="can0", interface='socketcan')
@@ -160,15 +160,15 @@ while 1:
                     strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
                     data = int(strdata[0], 16)
                     if data == 0x00:
-                        # どんなCurrent_stateでもStanbyに遷移
-                        Current_state = State.Stanby
+                        # どんなCurrent_stateでもStandbyに遷移
+                        Current_state = State.Standby
                         #Count_seconds_Supply_Relay_Precharge = 0
                         #Count_seconds_Motor_Relay_Precharge = 0
                     elif data == 0x01:
-                        if Current_state == State.Stanby:
+                        if Current_state == State.Standby:
                             Current_state = State.Supplying_Precharge
                         else:
-                            # Current_stateがStanby以外の場合は遷移しない
+                            # Current_stateがStandby以外の場合は遷移しない
                             None
                     elif data == 0x02:
                         None
@@ -179,10 +179,10 @@ while 1:
                         #この状態には遷移しない
                         #Current_state = State.Supplying
                     elif data == 0x04:
-                        if Current_state == State.Stanby:
+                        if Current_state == State.Standby:
                             Current_state = State.Flying_Supply_Precharge
                         else:
-                            # Current_stateがStanby以外の場合は遷移しない
+                            # Current_stateがStandby以外の場合は遷移しない
                             None
                     elif data == 0x05:
                         None
@@ -205,24 +205,24 @@ while 1:
                         #この状態には遷移しない
                         #Current_state = State.Flying
                     elif data == 0x0A:
-                        if Current_state == State.Stanby:
+                        if Current_state == State.Standby:
                             Current_state = State.Discharge_Precharge
                         else:
-                            # Current_stateがStanby以外の場合は遷移しない
+                            # Current_stateがStandby以外の場合は遷移しない
                             None
                     elif data == 0x0B:
                         None
                         #この状態には遷移しない
-                        #Current_state = State.Discharge_Intermidiate
+                        #Current_state = State.Discharge_Intermediate
                     elif data == 0x0C:
                         None
                         #この状態には遷移しない
                         #Current_state = State.Discharge
                     elif data == 0x5A:
-                        if Current_state == State.Stanby:
+                        if Current_state == State.Standby:
                             Current_state = State.Manual
                         else:
-                            # Current_stateがStanby以外の場合は遷移しない
+                            # Current_stateがStandby以外の場合は遷移しない
                             None
                     else:
                         None
@@ -278,7 +278,7 @@ while 1:
             outjson_list_0x6000_mode = []
             outjson_list_0x2500_lv_voltage = []
         
-        if Current_state == State.Stanby:
+        if Current_state == State.Standby:
             Count_seconds_Supply_Relay_Precharge = 0
             Count_seconds_Motor_Relay_Precharge = 0
 
@@ -537,11 +537,11 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x0000120C, data=[0x80], is_extended_id=True))  # 0C motor, precharge on
 
             if Count_seconds_Motor_Relay_Precharge >= Wait_seconds_Motor_Relay_Precharge:
-                Current_state = State.Discharge_Intermidiate
+                Current_state = State.Discharge_Intermediate
             else:
                 None
             Count_seconds_Motor_Relay_Precharge = Count_seconds_Motor_Relay_Precharge + 1
-        elif Current_state == State.Discharge_Intermidiate:
+        elif Current_state == State.Discharge_Intermediate:
             can_bus.send(can.Message(arbitration_id=0x00001221, data=[0x00], is_extended_id=True))  # 21 500A Relay, main relay OFF
             can_bus.send(can.Message(arbitration_id=0x00001222, data=[0x00], is_extended_id=True))  # 22 500A Relay, main relay OFF
 
