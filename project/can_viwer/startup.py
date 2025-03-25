@@ -1,5 +1,6 @@
 import subprocess
 import os
+import datetime
 
 
 def run_command(command):
@@ -12,7 +13,8 @@ def run_command(command):
 
 def run_pycommand(command):
     for script in command:
-        log_file = f"{script}.log"
+        current_time = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_file = f"{script}_{current_time}.log"
         print(f"Starting: {script}, logging to {log_file}")
         with open(log_file, 'w') as log:
             subprocess.Popen(['sudo', 'python3', script], stdout=log, stderr=log)
