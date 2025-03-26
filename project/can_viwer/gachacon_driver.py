@@ -29,7 +29,7 @@ jdata = {}
 #can_bus = can.interface.Bus(channel="can0", interface='socketcan')
 can_bus = can.interface.Bus(channel="vcan0", interface='socketcan')
 #previous_time = datetime.now()
-previous_time = int (time.time.now()*10)
+previous_time = int (time.time()*10)
 
 number_of_devices = 0x23
 number_of_element = number_of_devices*4
@@ -53,7 +53,7 @@ Count_seconds_Motor_Relay_Precharge = 0
 
 while 1:
 #    current_time = datetime.now()  # 現在の時刻を取得
-    current_time = int (time.time.now()*10)  # 現在の時刻を取得
+    current_time = int (time.time()*10)  # 現在の時刻を取得
     msg = can_bus.recv(2.0)
     if msg:
         #print (msg)
@@ -70,7 +70,7 @@ while 1:
     ## 1秒起きに実行 → 100ms毎に実行
     #=========================================================================#
     #if current_time.second != previous_time.second:
-    if current_time != previous_time:
+    if current_time - previous_time > 5: #defferent 5ms judge
         print(jdata)
         for i in range(number_of_devices):
             try:
