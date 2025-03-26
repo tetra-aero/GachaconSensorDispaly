@@ -67,10 +67,10 @@ while 1:
         jdata["0x" +format(msg.arbitration_id, '04X')] = tmp
 
     #=========================================================================#
-    ## 1秒起きに実行 → 100ms毎に実行
+    ## 1秒起きに実行 → 500ms毎に実行
     #=========================================================================#
     #if current_time.second != previous_time.second:
-    if current_time - previous_time > 5: #defferent 5ms judge
+    if current_time - previous_time > 5: #defferent 500ms judge
         print(jdata)
         for i in range(number_of_devices):
             try:
