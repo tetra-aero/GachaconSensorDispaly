@@ -53,7 +53,7 @@ Count_seconds_Motor_Relay_Precharge = 0
 
 while 1:
 #    current_time = datetime.now()  # 現在の時刻を取得
-    current_time = int (time.time()*10)  # 現在の時刻を取得
+    current_time = int (time.time()*10)  # 現在の時刻を取得 UNIX時間 0.1秒単位に桁上げ
     msg = can_bus.recv(2.0)
     if msg:
         #print (msg)
@@ -67,10 +67,10 @@ while 1:
         jdata["0x" +format(msg.arbitration_id, '04X')] = tmp
 
     #=========================================================================#
-    ## 1秒起きに実行 → 500ms毎に実行
+    ## 1秒おきに実行 → 100ms毎に実行
     #=========================================================================#
     #if current_time.second != previous_time.second:
-    if current_time - previous_time > 5: #defferent 500ms judge
+    if current_time - previous_time > 1: #defferent 100ms judge
         print(jdata)
         for i in range(number_of_devices):
             try:
