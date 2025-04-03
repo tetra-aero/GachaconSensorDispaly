@@ -5,4 +5,4 @@
 # 0x0A discharging
 # 0x5A Manual
 
-cansend can2 0000600F#4
+cansend can2 0000600F#04
