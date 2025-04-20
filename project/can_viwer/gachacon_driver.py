@@ -248,8 +248,8 @@ while 1:
         outjson_list.append(outjson_list_0x6000_mode)
         outjson_list.append(outjson_list_0x2500_lv_voltage)
 
-        with open('/mnt/ramdisk/outputv1.json', 'w') as f:
-            #with open('./output.json', 'w') as f:
+        #with open('/mnt/ramdisk/outputv1.json', 'w') as f:
+        with open('./outputv1.json', 'w') as f:
             json.dump(outjson, f)
             outjson_old = outjson
             #print(jdata)
@@ -268,7 +268,8 @@ while 1:
             outjson_list_0x2500_lv_voltage = []
         """
 
-        with open('/mnt/ramdisk/output.json', 'w') as f:
+        #with open('/mnt/ramdisk/output.json', 'w') as f:
+        with open('./output.json', 'w') as f:
             json.dump(outjson_list, f)
             outjson_list_old = outjson_list
             outjson_list = []
