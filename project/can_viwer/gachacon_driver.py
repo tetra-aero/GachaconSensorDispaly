@@ -52,9 +52,9 @@ Wait_seconds_Motor_Relay_Precharge = 7
 Count_seconds_Motor_Relay_Precharge = 0
 
 while 1:
-#    current_time = datetime.now()  # 現在の時刻を取得
+    #current_time = datetime.now()  # 現在の時刻を取得
     current_time = int(time.time()*1000)  # 現在の時刻を取得  # 現在の時刻を取得 100/1000ms毎に精度アップ
-    msg = can_bus.recv(2.0)
+    msg = can_bus.recv(0.1)  # 0.1秒待機してメッセージを受信
     if msg:
         #print (msg)
         #print(msg.channel)
