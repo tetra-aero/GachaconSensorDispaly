@@ -274,28 +274,14 @@ while 1:
         outjson_list.append(outjson_list_0x6000_mode)
         outjson_list.append(outjson_list_0x2500_lv_voltage)
 
-        #with open('/mnt/ramdisk/outputv1.json', 'w') as f:
-        with open('./outputv1.json', 'w') as f:
+        with open('/mnt/ramdisk/outputv1.json', 'w') as f:
             if outjson != {}:
                 json.dump(outjson, f)
             outjson_old = outjson
             #print(jdata)
             jdata = {}
 
-        """
-        with open('./output_list.json', 'w') as f:
-            json.dump(outjson_list, f)
-            outjson_list_old = outjson_list
-            outjson_list = []
-            outjson_list_0x1300_voltage = []
-            outjson_list_0x2000_throttle = []
-            outjson_list_0x2200_current = []
-            outjson_list_0x6000_mode = []
-            outjson_list_0x2500_lv_voltage = []
-        """
-
-        #with open('/mnt/ramdisk/output.json', 'w') as f:
-        with open('./output.json', 'w') as f:
+        with open('/mnt/ramdisk/output.json', 'w') as f:
             if outjson_list != [[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 0.0, 'raw': '0x0000', 'unit': ' V'}]]:
                 json.dump(outjson_list, f)
                 print(outjson_list)
