@@ -1,0 +1,1188 @@
+Interval:101ms
+Interval:101ms
+Interval:102ms
+Interval:104ms
+Interval:101ms
+Interval:201ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:102ms
+Interval:200ms
+Interval:102ms
+Interval:201ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:102ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:102ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:101ms
+Interval:138ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [{'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 0.0, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:155ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x01BE', 'unit': ' V'}]]
+Interval:118ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:121ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [{'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:156ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x01BE', 'unit': ' V'}]]
+Interval:118ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:105ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:167ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x01BE', 'unit': ' V'}]]
+Interval:116ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:172ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x01C1', 'unit': ' V'}]]
+Interval:117ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:105ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:166ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x01BE', 'unit': ' V'}]]
+Interval:117ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.6, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:170ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x01C1', 'unit': ' V'}]]
+Interval:115ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:173ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x01C1', 'unit': ' V'}]]
+Interval:117ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[{'title': 'HV Bus Voltage No.6', 'data': 63.8, 'raw': '0x027E', 'unit': ' V'}], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:170ms
+[[{'title': 'HV Bus Voltage No.1', 'data': 35.8, 'raw': '0x0166', 'unit': ' V'}, {'title': 'HV Bus Voltage No.2', 'data': 55.8, 'raw': '0x022E', 'unit': ' V'}, {'title': 'HV Bus Voltage No.3', 'data': 31.2, 'raw': '0x0138', 'unit': ' V'}, {'title': 'HV Bus Voltage No.4', 'data': 65.3, 'raw': '0x028D', 'unit': ' V'}, {'title': 'HV Bus Voltage No.5', 'data': 67.7, 'raw': '0x02A5', 'unit': ' V'}, {'title': 'HV Bus Voltage No.7', 'data': 50.5, 'raw': '0x01F9', 'unit': ' V'}, {'title': 'HV Bus Voltage No.8', 'data': 66.2, 'raw': '0x0296', 'unit': ' V'}, {'title': 'HV Bus Voltage No.9', 'data': 55.6, 'raw': '0x022C', 'unit': ' V'}, {'title': 'HV Bus Voltage No.10', 'data': 60.3, 'raw': '0x025B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.11', 'data': 65.1, 'raw': '0x028B', 'unit': ' V'}, {'title': 'HV Bus Voltage No.12', 'data': 49.3, 'raw': '0x01ED', 'unit': ' V'}], [{'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}, {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'}], [{'title': 'Bus current No.1', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.2', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'}, {'title': 'Bus current No.4', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.5', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.6', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'}, {'title': 'Bus current No.7', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'}, {'title': 'Bus current No.9', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.10', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}, {'title': 'Bus current No.11', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'}, {'title': 'Bus current No.12', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'}], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x01C1', 'unit': ' V'}]]
+Interval:116ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:201ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:200ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:103ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:101ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]
+Interval:102ms
+[[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 44.9, 'raw': '0x0000', 'unit': ' V'}]]

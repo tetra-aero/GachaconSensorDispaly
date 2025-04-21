@@ -51,6 +51,8 @@ Count_seconds_Supply_Relay_Precharge = 0
 Wait_seconds_Motor_Relay_Precharge = 7
 Count_seconds_Motor_Relay_Precharge = 0
 
+temp_lv_bat_vol = 0.0
+
 while 1:
     #current_time = datetime.now()  # 現在の時刻を取得
     current_time = int(time.time()*1000)  # 現在の時刻を取得  # 現在の時刻を取得 100/1000ms毎に精度アップ
@@ -65,6 +67,9 @@ while 1:
         tmp = tmp[:-1]
         #print(tmp)
         jdata["0x" +format(msg.arbitration_id, '04X')] = tmp
+    else:
+        #print("No message")
+        pass
 
     #=========================================================================#
     ## 1秒おきに実行 → 100ms毎に実行
@@ -74,7 +79,7 @@ while 1:
         gap_time = current_time - previous_time
         gap_msg = "Interval:" + str(gap_time) +"ms"
         print(gap_msg)
-        print(jdata)
+        #print(jdata)
         for i in range(number_of_devices):
             try:
             #--------------------------------------------------------------------------#
@@ -87,7 +92,7 @@ while 1:
                     object_data["data"] = round( (data/10.0) ,1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " V"
-                    print(object_data)
+                    #print(object_data)
                     #outjson.append(object_data)
                     outjson[number_of_devices*0+i] = object_data
                     outjson_list_0x1300_voltage.append(object_data)
@@ -104,7 +109,7 @@ while 1:
                     object_data["data"] = data
                     object_data["raw"] = ("0x"+format(data, '08X'))
                     object_data["unit"] = " RPM"
-                    print(object_data)
+                    #print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*1+i] = object_data
                     outjson_list_0x2000_throttle.append(object_data)
@@ -132,7 +137,7 @@ while 1:
                     object_data["data"] = round( (data/10.0) , 1)
                     object_data["raw"] = ("0x"+format(data, '04X'))
                     object_data["unit"] = " A"
-                    print(object_data)
+                    #print(object_data)
                     #outjson.append(object_data)  
                     outjson[number_of_devices*2+i] = object_data
                     outjson_list_0x2200_current.append(object_data)
@@ -148,91 +153,106 @@ while 1:
                     #outjson.append(object_data)  
                 #    outjson[number_of_devices*4+i] = object_data
             #--------------------------------------------------------------------------#
-                if f"0x{(0x2500 + 0x0F):04X}" in jdata:
-                    #0x250F, voltage, uint16_t Low_voltage_battery_voltage; Lowバッテリー電圧, 0.1V
-                    strdata = jdata[(f"0x{(0x2500 + 0x0F):04X}")].split()
-                    data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
-                    object_data = {}
-                    object_data["title"] = "LV Battery Voltage"
-                    object_data["data"] = round( (data/10.0) ,1)
-                    object_data["raw"] = ("0x"+format(data, '04X'))
-                    object_data["unit"] = " V"
-                    print(object_data)
-                    #outjson.append(object_data)
-                    outjson[number_of_devices*3+1] = object_data
-                    outjson_list_0x2500_lv_voltage.append(object_data)
-                if f"0x{(0x6000 + 0x0F):04X}" in jdata:
-                    # 0x600F, flight mode 切り替え, uint8_t 
-                    strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
-                    data = int(strdata[0], 16)
-                    if data == 0x00:
-                        # どんなCurrent_stateでもStandbyに遷移
-                        Current_state = State.Standby
-                        #Count_seconds_Supply_Relay_Precharge = 0
-                        #Count_seconds_Motor_Relay_Precharge = 0
-                    elif data == 0x01:
-                        if Current_state == State.Standby:
-                            Current_state = State.Supplying_Precharge
-                        else:
-                            # Current_stateがStandby以外の場合は遷移しない
-                            None
-                    elif data == 0x02:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Supplying_Intermediate
-                    elif data == 0x03:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Supplying
-                    elif data == 0x04:
-                        if Current_state == State.Standby:
-                            Current_state = State.Flying_Supply_Precharge
-                        else:
-                            # Current_stateがStandby以外の場合は遷移しない
-                            None
-                    elif data == 0x05:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Flying_Supply_Intermediate
-                    elif data == 0x06:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Flying_Supply_only
-                    elif data == 0x07:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Flying_ESC_Precharge
-                    elif data == 0x08:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Flying_ESC_Intermediate
-                    elif data == 0x09:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Flying
-                    elif data == 0x0A:
-                        if Current_state == State.Standby:
-                            Current_state = State.Discharge_Precharge
-                        else:
-                            # Current_stateがStandby以外の場合は遷移しない
-                            None
-                    elif data == 0x0B:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Discharge_Intermediate
-                    elif data == 0x0C:
-                        None
-                        #この状態には遷移しない
-                        #Current_state = State.Discharge
-                    elif data == 0x5A:
-                        if Current_state == State.Standby:
-                            Current_state = State.Manual
-                        else:
-                            # Current_stateがStandby以外の場合は遷移しない
-                            None
+                if i == 0x0F:
+                    if f"0x{(0x2500 + 0x0F):04X}" in jdata:
+                        #0x250F, voltage, uint16_t Low_voltage_battery_voltage; Lowバッテリー電圧, 0.1V
+                        strdata = jdata[(f"0x{(0x2500 + 0x0F):04X}")].split()
+                        data = (int(strdata[1], 16)<<8 | int(strdata[0], 16))
+                        object_data = {}
+                        object_data["title"] = "LV Battery Voltage"
+                        object_data["data"] = round( (data/10.0) ,1)
+                        temp_lv_bat_vol = round( (data/10.0) ,1)
+                        object_data["raw"] = ("0x"+format(data, '04X'))
+                        object_data["unit"] = " V"
+                        #print(object_data)
+                        #outjson.append(object_data)
+                        outjson[number_of_devices*3+1] = object_data
+                        outjson_list_0x2500_lv_voltage.append(object_data)
                     else:
-                        None
-                        #この状態には遷移しない
+                        #0x250F, voltage, uint16_t Low_voltage_battery_voltage; Lowバッテリー電圧, 0.1V, 信号が来てない場合
+                        object_data = {}
+                        object_data["title"] = "LV Battery Voltage"
+                        object_data["data"] = temp_lv_bat_vol
+                        object_data["raw"] = "0x0000"
+                        object_data["unit"] = " V"
+                        #print(object_data)
+                        #outjson.append(object_data)
+                        outjson[number_of_devices*3+1] = object_data
+                        outjson_list_0x2500_lv_voltage.append(object_data)
+                    
+                    if f"0x{(0x6000 + 0x0F):04X}" in jdata:
+                        # 0x600F, flight mode 切り替え, uint8_t 
+                        strdata = jdata[(f"0x{(0x6000 + 0x0F):04X}")].split()
+                        data = int(strdata[0], 16)
+                        if data == 0x00:
+                            # どんなCurrent_stateでもStandbyに遷移
+                            Current_state = State.Standby
+                            #Count_seconds_Supply_Relay_Precharge = 0
+                            #Count_seconds_Motor_Relay_Precharge = 0
+                        elif data == 0x01:
+                            if Current_state == State.Standby:
+                                Current_state = State.Supplying_Precharge
+                            else:
+                                # Current_stateがStandby以外の場合は遷移しない
+                                None
+                        elif data == 0x02:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Supplying_Intermediate
+                        elif data == 0x03:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Supplying
+                        elif data == 0x04:
+                            if Current_state == State.Standby:
+                                Current_state = State.Flying_Supply_Precharge
+                            else:
+                                # Current_stateがStandby以外の場合は遷移しない
+                                None
+                        elif data == 0x05:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Flying_Supply_Intermediate
+                        elif data == 0x06:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Flying_Supply_only
+                        elif data == 0x07:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Flying_ESC_Precharge
+                        elif data == 0x08:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Flying_ESC_Intermediate
+                        elif data == 0x09:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Flying
+                        elif data == 0x0A:
+                            if Current_state == State.Standby:
+                                Current_state = State.Discharge_Precharge
+                            else:
+                                # Current_stateがStandby以外の場合は遷移しない
+                                None
+                        elif data == 0x0B:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Discharge_Intermediate
+                        elif data == 0x0C:
+                            None
+                            #この状態には遷移しない
+                            #Current_state = State.Discharge
+                        elif data == 0x5A:
+                            if Current_state == State.Standby:
+                                Current_state = State.Manual
+                            else:
+                                # Current_stateがStandby以外の場合は遷移しない
+                                None
+                        else:
+                            None
+                            #この状態には遷移しない
+                        #pass
                     #pass
                 #pass                    
             except KeyError:
@@ -256,11 +276,11 @@ while 1:
 
         #with open('/mnt/ramdisk/outputv1.json', 'w') as f:
         with open('./outputv1.json', 'w') as f:
-            json.dump(outjson, f)
+            if outjson != {}:
+                json.dump(outjson, f)
             outjson_old = outjson
             #print(jdata)
             jdata = {}
-            previous_time = current_time
 
         """
         with open('./output_list.json', 'w') as f:
@@ -276,7 +296,9 @@ while 1:
 
         #with open('/mnt/ramdisk/output.json', 'w') as f:
         with open('./output.json', 'w') as f:
-            json.dump(outjson_list, f)
+            if outjson_list != [[], [], [], [{'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'}], [{'title': 'LV Battery Voltage', 'data': 0.0, 'raw': '0x0000', 'unit': ' V'}]]:
+                json.dump(outjson_list, f)
+                print(outjson_list)
             outjson_list_old = outjson_list
             outjson_list = []
             outjson_list_0x1300_voltage = []
@@ -284,6 +306,8 @@ while 1:
             outjson_list_0x2200_current = []
             outjson_list_0x6000_mode = []
             outjson_list_0x2500_lv_voltage = []
+        
+        previous_time = current_time
         
         if Current_state == State.Standby:
             Count_seconds_Supply_Relay_Precharge = 0
@@ -604,7 +628,7 @@ while 1:
             can_bus.send(can.Message(arbitration_id=0x000012FF, data=[0x00], is_extended_id=True))  # FF all OFF
         #pass
     #time.sleep(0.001)
-print("")
+#print("")
 
 
 

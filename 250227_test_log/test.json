@@ -1,0 +1,85 @@
+[
+    [
+        {'title': 'HV Bus Voltage No.1', 'data': 401.5, 'raw': '0x0FAF', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.2', 'data': 396.3, 'raw': '0x0F7B', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.3', 'data': 398.0, 'raw': '0x0F8C', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.4', 'data': 398.9, 'raw': '0x0F95', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.5', 'data': 402.1, 'raw': '0x0FB5', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.6', 'data': 400.8, 'raw': '0x0FA8', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.7', 'data': 400.4, 'raw': '0x0FA4', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.8', 'data': 400.4, 'raw': '0x0FA4', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.9', 'data': 396.7, 'raw': '0x0F7F', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.10', 'data': 399.7, 'raw': '0x0F9D', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.11', 'data': 401.7, 'raw': '0x0FB1', 'unit': ' V'
+        },
+        {'title': 'HV Bus Voltage No.12', 'data': 395.2, 'raw': '0x0F70', 'unit': ' V'
+        }
+    ],
+    [
+        {'title': 'Throttle No.1', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.2', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.3', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.4', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.5', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.6', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.7', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.8', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.9', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.10', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.11', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        },
+        {'title': 'Throttle No.12', 'data': 0, 'raw': '0x00000000', 'unit': ' RPM'
+        }
+    ],
+    [
+        {'title': 'Bus current No.1', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'
+        },
+        {'title': 'Bus current No.2', 'data': 0.1, 'raw': '0x0001', 'unit': ' A'
+        },
+        {'title': 'Bus current No.3', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'
+        },
+        {'title': 'Bus current No.4', 'data': 0.1, 'raw': '0x0001', 'unit': ' A'
+        },
+        {'title': 'Bus current No.5', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'
+        },
+        {'title': 'Bus current No.6', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'
+        },
+        {'title': 'Bus current No.7', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'
+        },
+        {'title': 'Bus current No.8', 'data': -0.7, 'raw': '0x-007', 'unit': ' A'
+        },
+        {'title': 'Bus current No.9', 'data': -0.5, 'raw': '0x-005', 'unit': ' A'
+        },
+        {'title': 'Bus current No.10', 'data': 0.0, 'raw': '0x0000', 'unit': ' A'
+        },
+        {'title': 'Bus current No.11', 'data': -0.4, 'raw': '0x-004', 'unit': ' A'
+        },
+        {'title': 'Bus current No.12', 'data': -0.2, 'raw': '0x-002', 'unit': ' A'
+        }
+    ],
+    [
+        {'title': 'STATE', 'data': 0, 'raw': 'Standby', 'unit': 'Standby', 'State': 'Standby'
+        }
+    ],
+    []
+]
