@@ -1,0 +1,113 @@
+* 基本操作
+* 付記
+** 結論:シェルスクリプトはPOSIX向けに書くべき
+** 移植性が無いシェルスクリプトをBashismsと呼ぶ
+checkbashismsと云う専用のlintがある
+** MS-DOSのバッチファイルはcommand.comという標準があった
+** UNIXのシェルにはinteractive/non-interactiveの概念がある
+** UNIXの世界では、標準のシェルは無い
+** 微妙な方言ができてしまった
+** 単純なスクリプトでは問題が出ないが、複雑なことをやらせる時は注意
+:PROPERTIES:
+:ID:       dc620703-d765-4435-acb9-f277051d1d27
+:END:
+** だいたいのシェルはPOSIX準拠を目指している
+*** fish は例外で、interactive shellに特化している
+** dash (Debian Almquist shell)
+** ls -l /bin/sh とすると、大抵は bash にsymlinkされているはず
+Debian/Ubuntu だと /bin/dash
+** POSIXに準拠していればdashでも動くはず
+** POSIX は当時のシェルの部分集合みたいに定義された
+** POSIXは機能が少なくて不便、Linuxで動くbashでいいじゃん、という意見もある
+** bashでも動くが、dashがminimalなので速度・セキュリティ面で優位
+** net-tools はすでに非推奨で iproute2 を使うべき
+ifconfig が net-tools、ip が iproute2
+Windows の ipconfig と混同しないこと
+** ネットワークインターフェースはドライバを読み込むだけでは動作しない
+** ネットワークインターフェースの設定を行なう
+system call は sysfs とかsystemdに発行窓口がある
+** modprobe.d は kmod、modules-load.d は systemd の仕組み
+** systemd は init
+initの比較
+https://wiki.gentoo.org/wiki/Comparison_of_init_systems/ja
+** ネットワークマネージャ
+ネットワークマネージャの比較
+https://wiki.gentoo.org/wiki/Network_management
+さらに上位に netplan がある cloud-init?
+** 故にshell 設定ファイルも統一されていない
+** SocketCAN ドキュメント
+* やっていることの説明
+** shebang
+#+begin_src sh
+#!/bin/sh
+#+end_src
+シェルスクリプト冒頭にある部分は、このスクリプトを実行する/食わせるコマンド(コマンドラインインタプリタ)
+'sample.sh' ファイルをchmod +x した時、
+#+begin_src sh
+$ /bin/sh sample.sh
+#+end_src
+を実行したようにふるまう
+** インターフェースを down
+#+begin_src sh
+sudo ip link set dev canL down
+#+end_src
+
+** インターフェースを設定
+#+begin_src sh
+sudo ip link set dev canP type can bitrate 500000
+sudo ifconfig canL txqueuelen 1000
+#+end_src
+** インターフェースを up
+#+begin_src sh
+sudo ip link set dev canL up
+#+end_src
+** vcanインターフェースを追加
+#+begin_src sh
+sudo modprobe vcan
+#+end_src
+modules-load.d で良いかも
+** CANインターフェースを有効化する シェルスクリプト
+#+begin_src :tangle boot_can_gateway_with_sudo.sh
+#!/bin/sh
+
+# setup can0, can1, can2
+sudo ip link set dev canL down
+sudo ip link set dev canR down
+sudo ip link set dev canP down
+
+sudo ip link set dev canL type can bitrate 500000
+sudo ip link set dev canR type can bitrate 500000
+sudo ip link set dev canP type can bitrate 500000
+
+sudo ifconfig canL txqueuelen 1000
+sudo ifconfig canR txqueuelen 1000
+sudo ifconfig canP txqueuelen 1000
+
+sudo ip link set dev canL up
+sudo ip link set dev canR up
+sudo ip link set dev canP up
+
+# setup vcan0
+sudo modprobe vcan
+sudo ip link add dev vcan0 type vcan
+sudo ip link set dev vcan0 down
+#sudo ip link set dev vcan0 type can bitrate 500000
+sudo ifconfig vcan0 txqueuelen 1000
+sudo ip link set dev vcan0 up
+
+# setup can gateway, vcan0 -> can0/can1/can2, can0/can1/can2 -> vcan0
+sudo cangw -A -s canL -d vcan0 -e
+sudo cangw -A -s canR -d vcan0 -e
+sudo cangw -A -s canP -d vcan0 -e
+
+sudo cangw -A -s vcan0 -d canL -e
+sudo cangw -A -s vcan0 -d canR -e
+sudo cangw -A -s vcan0 -d canP -e
+#+end_src
+
+** CANインターフェース名を固定する udev ルール
+#+begin_src
+SUBSYSTEM=="net", ACTION=="add", KERNELS=="1-2:1.0", NAME="canR"
+SUBSYSTEM=="net", ACTION=="add", KERNELS=="3-3:1.0", NAME="canP"
+SUBSYSTEM=="net", ACTION=="add", KERNELS=="3-1:1.0", NAME="canL"
+#+end_src
